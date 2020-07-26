@@ -212,4 +212,8 @@ $(document).scroll(function() {
   changeWord();
   setInterval(changeWord, 2200);
   
+
+
+  console.log(document.documentElement.scrollTop)
+  
   

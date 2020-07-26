@@ -116,22 +116,45 @@ var parent2 = document.getElementsByClassName('project1')
 body.onscroll = function(){
     console.log(document.documentElement.scrollTop)
     //console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
-    if(document.documentElement.scrollTop>= 550)//Adjust Tolerance as you want
+
+
+    if(document.documentElement.scrollTop >= 2400){
+  
+        document.getElementsByClassName('animated-title').style.display = 'block'
+       
+    }
+    else if(document.documentElement.scrollTop>= 550)//Adjust Tolerance as you want
     {
         $(document).ready(function() {
             $('#working-heading').fadeIn(500);
             
-        });
+        });        
         
     }
 
-
+    
     else if(document.documentElement.scrollTop <= 600){
         $(document).ready(function() {
             $('#working-heading').fadeOut(500);
-        });
-        
+        });       
     }
 
 };
+
+
+// Code to show Project number 2.
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 2400) {
+      $('.animated-title').fadeIn();
+    } else if(y >3200) {
+      $('.animated-title').fadeOut();
+    }
+    else{
+        $('.animated-title').fadeOut();
+    }
+  });
+
+
+
 

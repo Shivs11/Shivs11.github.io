@@ -213,7 +213,14 @@ $(document).scroll(function() {
   setInterval(changeWord, 2200);
   
 
-
+  $(function() {
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 4300){
+         console.log("HEy")
+       }
+    });
+ });
   console.log(document.documentElement.scrollTop)
   
   
+

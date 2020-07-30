@@ -1285,7 +1285,7 @@ main .project4{
 
 main .project4 .title {
   position: relative;
-  top: 220px;
+  top: 390px;
   font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
   text-align: center;
   color: #FFF;
@@ -1332,7 +1332,7 @@ main .project4 .white-mode:hover {
 
 main .project4 .inner{
   height: 200vh;
-  padding-top: 400px;
+  padding-top: 350px;
   width: 700px;
 }
 
@@ -1393,13 +1393,56 @@ main .project4 #work-description{
   color: black;
   position: relative;
   left: -350px;
-  width: 780px;
+  width: 800px;
 }
 
 main .project4 li{
+  padding-bottom: 1em;
   list-style-type: disc;
   position: relative;
-  left: 193px;
+  left: 196px;
+  line-height: 15px;
+}
+
+
+main .project4 ul{
+  line-height: 20px;
+}
+
+main .project4 .firstline{
+  position: relative;
+  left: -50px;
+}
+main .project4 .secondline{
+  position: relative;
+  left: -41.7px;
+}
+
+main .project4 .secondline1{
+  position: relative;
+  left: -99px;
+}
+
+main .project4 .firstline2{
+  position: relative;
+  left: -62px;
+}
+
+main .project4 .thirdline{
+  position: relative;
+  left: -18.82rem;
+}
+
+
+main .project4 .firstline3{
+  position: relative;
+  left: -3.3rem;
+}
+
+
+main .project4 .secondline3{
+  position: relative;
+  left: -7rem;
 }
 
 

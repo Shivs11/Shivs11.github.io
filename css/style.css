@@ -1279,7 +1279,7 @@ main .meettheteam{
 
 
 main .project4{
-  height: 500vh;
+  height: 230vh;
   background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
 }
 
@@ -1445,6 +1445,117 @@ main .project4 .secondline3{
   left: -7rem;
 }
 
+
+
+/* Section - Resume. */
+
+main .resume{
+  height: 500vh;
+}
+
+
+main .resume .heading{
+
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main .resume .code{
+  height: 300vh;
+  position: relative;
+  top: 250px;
+  border-radius: 5px;
+  width: 750px;
+  margin:0 auto;
+  padding-top: 15px;
+  background: #ccc;
+  height: 700px;
+  font-family: 'Monaco', 'Courier New';
+  text-align: left;
+  font-size: 13px;
+  color: #fafafa;
+}
+
+
+main .resume .console{
+  width: 670px;
+  line-height: 20px;
+  padding: 40px;
+  height: 650px;
+  margin: 0 auto;
+  background: #383737;
+}
+
+main .resume .answer{
+  color: #ccc;
+  position: relative;
+  left: 1rem;
+}
+
+
+main .resume .moveleft{
+  position: relative;
+  left: 1.9rem;
+}
+
+
+main .resume .specialone{
+  position: relative;
+  top: -15px;
+}
+
+
+main .resume .answer-specialone{
+  position: relative;
+  left: 1rem;
+  top: -34.7px;
+  color: #ccc;
+}
+
+
+main .resume .newone{
+  position: relative;
+  top: -34px;
+}
+
+main .resume .answer-newone{
+  position: relative;
+  left: 1rem;
+  top: -3.2rem;
+  color: #ccc;
+}
+
+main .resume a{
+  color: #3a92c8;
+}
+
+/* Typewriter effect for resume section */
+
+/* DEMO-SPECIFIC STYLES */
+.heading h1 {
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 500px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 
 /* Viewport less than 750px */
 

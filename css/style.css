@@ -258,7 +258,7 @@ main .project1 h4{
 }
 
 
-main .project1 h3{
+main .project1 #project-title2{
     color: black;
     height: 20vh;
     position: relative;
@@ -814,6 +814,7 @@ form.chat *{
   form.chat input[type='text']{
     width:73%;
     float:left;
+    font: 400 13px 'Open Sans', sans-serif;
   }
   
   form.chat input[type='submit']{
@@ -823,6 +824,7 @@ form.chat *{
     font-weight:700;
     text-align:right;
     float:right;
+    font: 400 13px 'Open Sans', sans-serif;
   }
   
     form.chat .myMessage,form.chat .fromThem{
@@ -1638,7 +1640,7 @@ main .Contact-Me h1 {
 	width: 45%;
 }
 
-input[type='text'], [type='email'], select, textarea {
+main .Contact-Me input[type='text'],  [type='email'], select, textarea {
 	background: none;
   border: none;
 	border-bottom: solid 2px #474544;
@@ -1662,7 +1664,7 @@ input[type='text'], [type='email'], select, textarea {
 	transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
+main .project .Contact-Me input[type='text']:focus, [type='email']:focus, textarea:focus {
 	outline: none;
 	padding: 0 0 0.875em 0;
 }
@@ -1866,6 +1868,18 @@ main .Contact-Me{
 
 main .footer{
   background: #F2F3EB;
+
+
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+}
+
+
+footer{
+  position: relative;
+  top: -50px;
+  left: 590px;
+  font-style: italic;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -1880,6 +1894,11 @@ main .footer{
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
+}
+
+
+main .tryouts{
+  height: 250vh;
 }
 
 /* The typing effect */

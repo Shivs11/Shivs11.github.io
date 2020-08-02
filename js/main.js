@@ -215,12 +215,18 @@ $(document).scroll(function() {
 
   $(function() {
     $(window).scroll(function () {
-       if ($(this).scrollTop() > 4300){
-         console.log("HEy")
+       if ($(this).scrollTop() > 8500){
+        $('.heading-for-resume').fadeIn();
+       }
+
+       if($(this).scrollTop < 8500){
+        $('.heading-for-resume').fadeOut
        }
     });
  });
-  console.log(document.documentElement.scrollTop)
-  
+
+
+
+
   
 

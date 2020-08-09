@@ -91,7 +91,7 @@ ul{
 
 
 .collapse{
-    height: 30rem;
+    height: 20rem;
 
 }
 
@@ -170,26 +170,27 @@ ul{
 
  /* Site Title */
 
-main .site-title{
-    background: url(../assets/Wallpaper-2.jpg);
-    background-size: cover;
-    height: 110vh;
-    display: flex;
-    justify-content: center;
+.site-title {
+  background: 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 320" preserveAspectRatio="xMidYMid meet"><path fill="white"  d="M0,224L120,240C240,256,480,288,720,266.7C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>') bottom/100% auto,
+    url('../assets/Wallpaper-2.jpg') center/cover;
+  background-repeat:no-repeat;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
 }
 
-main .site-title .svg{
-    padding-top: 144px !important;
-    width: 100%;
-
+#svg-main{
+  display: none;
 }
 
-main .site-title .site-background{
-    padding-top: 10rem;
-    text-align: center;
-    color: white;
-    padding-top: 24px;
+.site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: white;
+  padding-top: 24px;
 }
+
 
 main h1{
     font-size: 200%;
@@ -197,6 +198,10 @@ main h1{
     padding-left: 1px;
     font-style: italic;
     font-size: 50px;
+}
+
+main .site-title h1{
+  padding-top: 20px;
 }
 
 main h2{
@@ -215,9 +220,7 @@ main h2{
 
  /* Parent div for scroll effect */
 
- main .space{     
-    position: relative;
- }
+
 
  /* Parent div for scroll effect */
 
@@ -1026,6 +1029,7 @@ main .project3{
     -webkit-background-clip: text;
     color: transparent !important;
     
+    
   }
   
   .masked-copy h2 { 
@@ -1051,8 +1055,9 @@ main .project3{
     text-decoration: underline;
     text-decoration-color: white;
     top: 150px;
-    left: 120px;
+    left: 150px;
     font-size: 150px;
+
   }
   
   .texture-orange {
@@ -1106,14 +1111,16 @@ main .project3 .explanation{
 .container{
   width: 1000px;
   position: relative;
-  left: 200px;
+  left: 250px;
   top: 720px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .container .card{
-  position: relative;
+
+  justify-content: space-evenly;
   cursor: pointer;
 }
 
@@ -1121,11 +1128,16 @@ main .project3 .explanation{
   width: 300px;
   height: 200px;
   transition: 0.5s;
+  justify-content: space-between;
 }
 
 #firstone{
+  /*
   position: relative;
   left: 27px;
+  */
+
+  justify-content: space-between;
 }
 
 .container .card .face.face1{

@@ -217,6 +217,11 @@ main h2{
 
 }
 
+main .site-title h1{
+  padding-top: 20px;
+}
+
+
  /* Site Title */
 
 

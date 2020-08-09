@@ -330,7 +330,7 @@ main .project1 .card{
     margin-left: auto;
     margin-right: auto;
     top: 80px;
-    height: 970px;
+    height: 1290px;
 
     padding-left: 160px;
     padding-right: 160px;
@@ -534,15 +534,24 @@ main .project1 .explanation #first-line{
     font-size: 18px;
     flex-direction: initial;
     font-weight: 600;
-    line-break: 0.67;
+    line-break: 0.1;
     position: relative;
     padding-left: 25px;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    padding-bottom: 17px;
+
+}
+
+main .project1 .content{
+  position: relative;
+  top: 100px;
 }
 
 main .project1 .explanation #second-line{
     padding-left: 7.2px;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 600;
     color: black;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -1218,44 +1227,25 @@ main .project2 .letter.in {
 }
 
 .igData1:after {
-	content: "Matt";
+	content: "NodeJS";
 }
 
 .igData2:after {
-	content: "Steve";
+	content: "Express.js";
 }
 
 .igData3:after {
-	content: "Mark";
+	content: "WebSockets";
 }
 
 .igData4:after {
-	content: "Jade";
+	content: "HTML";
 }
 
 .igData5:after {
-	content: "Ray";
+	content: "CSS3";
 }
 
-.igData6:after {
-	content: "Oliver";
-}
-
-.igData7:after {
-	content: "Barry";
-}
-
-.igData8:after {
-	content: "Felicity";
-}
-
-.igData9:after {
-	content: "Malcom";
-}
-
-.igData10:after {
-	content: "Ted";
-}
 
 @-webkit-keyframes showBar1 {
 	0% {
@@ -1266,7 +1256,6 @@ main .project2 .letter.in {
 		height: 50%;
 	}
 }
-
 @-webkit-keyframes showBar2 {
 	0% {
 		height: 0px;
@@ -1556,6 +1545,9 @@ main .project2 .letter.in {
 		height: 62%;
 	}
 }
+
+
+
 
 
 /* project 3 */

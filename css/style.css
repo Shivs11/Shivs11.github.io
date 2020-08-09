@@ -9,6 +9,7 @@ html,body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -56,12 +57,16 @@ ul{
 
 
 .nav{
-    background: white;
+    background: black;
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
     transition: 0.8s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 
@@ -70,12 +75,18 @@ ul{
     padding: 1rem 0;
     display: block;
     font-family: 'Roboto Mono', monospace;
+    color: white;
+    position: relative;
+    left: 22px;
 
 }
 
 
 .nav .nav-menu{
     justify-content: space-between;
+    position: relative;
+    left: -50px;
+
 }
 
 
@@ -87,17 +98,24 @@ ul{
 .nav .nav-items{
     display: flex;
     margin: 0;
+
 }
 
 
-.nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
+.nav .nav-items .nav-link {
+    padding: 1.5rem 1rem;
     font-size: 1.1rem;
     position: relative;
+    left: -50px;
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
     font-size: 1.1rem;
 }
+
+.nav .nav-items .nav-link a{
+  color: white;
+}
+
 
 .nav .nav-items .nav-link:hover{
     background-color: black;
@@ -162,6 +180,7 @@ main .site-title{
 
 main .site-title .svg{
     padding-top: 144px !important;
+    width: 100%;
 
 }
 
@@ -1452,7 +1471,7 @@ main .project4 .secondline3{
 /* Section - Resume. */
 
 main .resume{
-  height: 200vh;
+  height: 170vh;
   background-color: #FFDEE9;
   background-image: linear-gradient( #FFDEE9 0%, #B5FFFC 100%);
   background-attachment: fixed;
@@ -1571,6 +1590,206 @@ main .resume a{
 
 /* Contact-Me form */
 
+main .Contact-Me{
+  height: 150vh;
+  background: black;
+  padding-top: 20px;
+  position: relative;
+}
+
+main .Contact-Me h1{
+  /*
+  position: relative;
+  top: 50px;
+  left: 480px;
+  */
+  text-align: center;
+  color: white;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 690;
+}
+
+main .Contact-Me footer{
+  position: absolute;
+  bottom: 0;
+  left: 650px;
+  color: white;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+}
+
+main .Contact-Me {
+  --base-grid: 8px;
+  --colour-body-background: white;
+  --colour-background: #fff;
+  --colour-background-folded: #f5f5f5;
+  --colour-background-stripes: rgba(255,255,255,.5);
+  --colour-text: #1a1a1a;
+}
+
+
+
+main.Contact-Me, main .Contact-Me :after, main .Contact-Me :before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main .Contact-Me body {
+  background: var(--colour-body-background);
+  font-family: Bitter;
+  padding: calc(var(--base-grid)*10);
+}
+
+.articles {
+  position: relative;
+  top: 250px;
+  margin: calc(var(--base-grid)*2) auto calc(var(--base-grid)*5);
+  display: grid;
+  grid-row-gap: calc(var(--base-grid)*8);
+  grid-column-gap: calc(var(--base-grid)*6);
+  grid-template-columns: repeat(auto-fit,minmax(calc(var(--base-grid)*35),1fr));
+  justify-items: center;
+}
+
+.articles__article {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  perspective: 1000px;
+  animation-name: animateIn;
+  animation-duration: .35s;
+  animation-delay: calc(var(--animation-order)*100ms);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.articles__article:before {
+  content: "";
+  position: absolute;
+  top: calc(var(--base-grid)*-2);
+  left: calc(var(--base-grid)*-2);
+  border: 2px dashed var(--colour-background);
+  background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px,var(--colour-background-stripes) 0, var(--colour-background-stripes) 5px);
+  z-index: -1;
+}
+
+.articles__article,
+.articles__article:before {
+  width: calc(var(--base-grid)*35);
+  height: calc(var(--base-grid)*35);
+}
+
+.articles__link {
+  background-color: var(--colour-body-background);
+  border: 2px solid var(--colour-background);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.articles__link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(var(--base-grid)*3);
+  width: calc(var(--base-grid)*2);
+  height: calc(var(--base-grid)*2);
+  margin-top: calc(var(--base-grid)*-1);
+  clip-path: polygon(75% 0,100% 50%,75% 100%,0 100%,25% 50%,0 0);
+  -webkit-clip-path: polygon(75% 0,100% 50%,75% 100%,0 100%,25% 50%,0 0);
+  background-color: var(--colour-background);
+  opacity: 0;
+  transition: opacity .5s ease-in,transform .3s ease-in-out 0ms;
+}
+
+.articles__content {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: calc(var(--base-grid)*2);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--colour-background);
+}
+
+.articles__content--lhs {
+  clip-path: polygon(0 0,51% 0,51% 100%,0 100%);
+  -webkit-clip-path: polygon(0 0,51% 0,51% 100%,0 100%);
+}
+
+.articles__content--rhs {
+  clip-path: polygon(50% 0,100% 0,100% 100%,50% 100%);
+  -webkit-clip-path: polygon(50% 0,100% 0,100% 100%,50% 100%);
+  transition: transform .5s ease-in-out,background-color .4s ease-in-out;
+}
+
+#GitHub{
+  position: relative;
+  left: 67px;
+}
+
+#GitHub-p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+  
+}
+#Mail{
+  position: relative;
+  left: 82px;
+}
+
+#Mail-p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+}
+
+#LinkedIn{
+  position: relative;
+  left: 67px;
+}
+
+#L-p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+}
+
+
+
+.articles__title {
+  font-size: calc(var(--base-grid)*4);
+  line-height: 1.125;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.articles__footer {
+  margin-top: auto;
+  font-size: calc(var(--base-grid)*2);
+  line-height: calc(var(--base-grid)*2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__link:hover .articles__content--rhs {
+  background-color: var(--colour-background-folded);
+  transform: rotateY(-50deg);
+}
+
+.articles__link:hover:after {
+  opacity: 1;
+  transform: translateX(calc(var(--base-grid)*1.5));
+  transition: opacity .5s ease-in,transform .3s ease-in-out .25s;
+}
+
 main .Contact-Me button {
   overflow: visible;
 }
@@ -1595,74 +1814,12 @@ textarea {
 
 main .Contact-Me #container {
   border: solid 3px #474544;
-  max-width: 768px;
+  max-width: 1000px;
   margin: 60px auto;
   position: relative;
   top: 180px;
 }
 
-main .Contact-Me form {
-  position: relative;
-  padding: 45px;
-
-}
-
-main .Contact-Me h1 {
-  color: #474544;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 7px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.underline {
-  border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
-}
-
-.icon_wrapper {
-  margin: 50px auto 0;
-  width: 100%;
-}
-
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
-}
-
-.email {
-	float: right;
-	width: 45%;
-}
-
-main .Contact-Me input[type='text'],  [type='email'], select, textarea {
-	background: none;
-  border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
-	font-size: 1.000em;
-  font-weight: 400;
-  letter-spacing: 1px;
-	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
-  text-transform: uppercase;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
 
 main .project .Contact-Me input[type='text']:focus, [type='email']:focus, textarea:focus {
 	outline: none;
@@ -1722,29 +1879,6 @@ textarea {
 	color: #474544;
 }
 
-#form_button {
-  background: none;
-  border: solid 2px #474544;
-  color: #474544;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 0.875em;
-  font-weight: bold;
-  outline: none;
-  padding: 20px 35px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#form_button:hover {
-  background: #474544;
-  color: #F2F3EB;
-}
 
 @media screen and (max-width: 768px) {
   #container {
@@ -1859,11 +1993,7 @@ main .Contact-Me .card{
 }
 
 
-main .Contact-Me{
-  height: 180vh;
-  background: #F2F3EB;
-  padding-top: 20px;
-}
+
 
 
 main .footer{
@@ -1876,9 +2006,8 @@ main .footer{
 
 
 footer{
-  position: relative;
-  top: -50px;
-  left: 590px;
+  position: absolute;
+  bottom: 0;
   font-style: italic;
 }
 

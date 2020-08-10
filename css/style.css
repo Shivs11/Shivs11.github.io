@@ -62,7 +62,7 @@ ul{
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     position: fixed;
     top: 0;
     width: 100%;
@@ -151,7 +151,7 @@ ul{
 .nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
-    padding: 1.7rem 0;
+    padding: 1.2rem 0;
 }
 
 
@@ -311,8 +311,7 @@ main .project1 .card{
     align-items: center;
     display: flex;
     justify-content: center;
-
-
+    width: 20rem;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -2613,7 +2612,7 @@ main .tryouts{
 
 
     .container {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
 }
 
@@ -2630,3 +2629,130 @@ main .tryouts{
         font-size: 1.5rem;
     }
 }
+
+
+/* Viewport for Iphones. */
+
+/* iphone 3 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) { }
+
+/* iphone 4 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) { }
+
+/* iphone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { }
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { }
+
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { }
+
+/* iphone X , XS, 11 Pro */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+
+
+
+/* Getting my heading down a bit */  
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.toggle-icons{
+  padding: 1.9rem
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+.space{
+  display: none;
+}
+
+}
+/* iphone XR, 11 */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+
+/* What I have been working on- section */
+
+.working-on h2{
+  font-size: 50px;
+  position: relative;
+  top: 100px;
+  left: -29px;
+}
+
+
+/* Reducing the size of the section*/
+
+.project1{
+  top: -120px;
+}
+
+.project1 #project-title{
+  font-size: 65px;
+}
+
+.project-description #project-title2{
+  font-size: 65px;
+  position: relative;
+  left: -100px;
+}
+
+.project-description .card{
+  width: 400px;
+}
+
+
+}
+ 
+
+
+/* iphone XS Max, 11 Pro Max */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { }

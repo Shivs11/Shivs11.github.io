@@ -520,12 +520,11 @@ main .project1 .card{
 
 
 main .project1 .card img{
-
-    max-width: 170%;
-    
+    border-radius: 60px;
+    width: 170%;
     position: relative;
     top: -50px;
-
+    padding-top: 50px;
 }
 
 main .project1 .explanation #first-line{
@@ -2747,28 +2746,16 @@ main .tryouts{
   font-size: 65px;
 }
 
-
 .project-description #project-title2{
-  font-size: 15px;
+  font-size: 65px;
   position: relative;
-<<<<<<< HEAD
-  top: 50px;
-  padding-top: 90px;
-  left: -120px;
-
-=======
   top: -20px;
 
   text-align: center;
->>>>>>> Reformatting
 }
 
-
-.project-description img{
-  position: relative;
-  left: -113px;
-  width: 125%;
-  border-style: groove;
+.project-description .card{
+  display: none;
 }
 
 main .project1{
@@ -2780,8 +2767,6 @@ main .project1 .card{
   border-radius: 40px;
   width: 20%;
 }
-
-
 
 }
  

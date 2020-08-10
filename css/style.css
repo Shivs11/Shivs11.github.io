@@ -519,11 +519,12 @@ main .project1 .card{
 
 
 main .project1 .card img{
-    border-radius: 60px;
-    width: 170%;
+
+    max-width: 170%;
+    
     position: relative;
     top: -50px;
-    padding-top: 50px;
+
 }
 
 main .project1 .explanation #first-line{
@@ -2745,15 +2746,25 @@ main .tryouts{
   font-size: 65px;
 }
 
+
 .project-description #project-title2{
-  font-size: 65px;
+  font-size: 15px;
   position: relative;
-  left: -100px;
+  top: 50px;
+  padding-top: 90px;
+  left: -120px;
+
 }
 
-.project-description .card{
-  display: none;
+
+.project-description img{
+  position: relative;
+  left: -113px;
+  width: 125%;
+  border-style: groove;
 }
+
+
 
 
 }

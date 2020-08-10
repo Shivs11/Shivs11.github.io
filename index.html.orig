@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -69,7 +71,125 @@
          </section>
          <section class = 'project1'>
             <div class = "chat-time">
+<<<<<<< HEAD
+                <h4 id = 'project-title'>Developed a Chat Application.</h4>
+            </div>
+                <div class="project-description">
+                    
+
+                        <div class="card" style="width: 28rem;">
+                            <!--
+                            <div class="pyro">
+                                <div class="before"></div>
+                                <div class="after"></div>
+                            </div>
+                            -->
+
+                            <h3 id = "project-title2">Experience Chat-Time.</h4>
+                            <img class="card-img-top" src="../Chat-app/Images/Interface-1.png" alt="Card image cap">
+                            <div class="content">
+                            <div class="explanation">
+                                <p id = "first-line">A Full-Stack Web Application developed using <i>NodeJS.</i> </p>
+                                <p id = "second-line">Inculcated <i>Websockets</i> to establish real-time connection.</p>
+                                <p id = "third-line">Utilized <i>Express.js</i> to build the interface.</p>
+                            </div>
+                            </div>
+
+
+
+<!--
+                                                      <div class="explanation">
+                                <p id = "first-line">A Full-Stack Web Application developed using <i>NodeJS.</i> </p>
+                                <p id = "second-line">Inculcated <i>Websockets</i> to establish real-time connection.</p>
+                                <p id = "third-line">Utilized <i>Express.js</i> to build the interface.</p>
+                            </div>
+-->
+
+
+                          
+<!--
+  
+-->
+<!--
+<div class="igFrameBar">
+  <div class="igData igData1"></div>
+  <div class="igData igData2"></div>
+  <div class="igData igData3"></div>
+  <div class="igData igData4"></div>
+  <div class="igData igData5"></div>
+</div>
+-->
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+                            <div class="button">
+                                <div id="loginBtn" class="loginBtn"><span><a href="">Learn More.</a></span></div>
+                            </div>
+
+
+                            
+
+                        </div>
+
+
+
+
+                </div>
+
+                <!--<svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 240 1440 320"><path fill="#ffff" 
+                    fill-opacity="1" d="M0,256L80,240C160,224,320,192,
+                    480,197.3C640,203,800,245,960,234.7C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+
+        </section>
+
+
+        <section id="project2" class="project2">
+            
+
+        <div class="animated-title">
+        <div class="text-top">
+        <div>
+        <span>Say</span>
+        <span>Hello to</span>
+        
+        </div>
+        </div>
+        <div class="text-bottom">
+        <div>Connec-Ted!</div>
+        </div>
+        </div>
+
+        
+
+        
+
+<div class="iphone">
+    <div class="border">
+      <form class="chat">
+        <span></span>
+        <div class="messages" id="adobewordpress">
+          <div class="message">
+            <div class="myMessage">
+              <p>What is Connec-Ted?</p>
+              <date><b>Shivam</b> Just now.</date>
+=======
                <h4 id = 'project-title'>Developed a Chat Application.</h4>
+>>>>>>> master
             </div>
             <div class="project-description">
                <div class="card" style="width: 20rem;">
@@ -489,3 +609,4 @@
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
    </body>
 </html>
+

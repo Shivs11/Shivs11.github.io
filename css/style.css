@@ -330,7 +330,7 @@ main .project1 .card{
     margin-left: auto;
     margin-right: auto;
     top: 80px;
-    height: 1290px;
+    height: 970px;
 
     padding-left: 160px;
     padding-right: 160px;
@@ -534,24 +534,15 @@ main .project1 .explanation #first-line{
     font-size: 18px;
     flex-direction: initial;
     font-weight: 600;
-    line-break: 0.1;
+    line-break: 0.67;
     position: relative;
     padding-left: 25px;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    padding-bottom: 17px;
-
-}
-
-main .project1 .content{
-  position: relative;
-  top: 100px;
 }
 
 main .project1 .explanation #second-line{
     padding-left: 7.2px;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 600;
     color: black;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -1227,25 +1218,44 @@ main .project2 .letter.in {
 }
 
 .igData1:after {
-	content: "NodeJS";
+	content: "Matt";
 }
 
 .igData2:after {
-	content: "Express.js";
+	content: "Steve";
 }
 
 .igData3:after {
-	content: "WebSockets";
+	content: "Mark";
 }
 
 .igData4:after {
-	content: "HTML";
+	content: "Jade";
 }
 
 .igData5:after {
-	content: "CSS3";
+	content: "Ray";
 }
 
+.igData6:after {
+	content: "Oliver";
+}
+
+.igData7:after {
+	content: "Barry";
+}
+
+.igData8:after {
+	content: "Felicity";
+}
+
+.igData9:after {
+	content: "Malcom";
+}
+
+.igData10:after {
+	content: "Ted";
+}
 
 @-webkit-keyframes showBar1 {
 	0% {
@@ -1256,6 +1266,7 @@ main .project2 .letter.in {
 		height: 50%;
 	}
 }
+
 @-webkit-keyframes showBar2 {
 	0% {
 		height: 0px;
@@ -1547,9 +1558,6 @@ main .project2 .letter.in {
 }
 
 
-
-
-
 /* project 3 */
 
 main .project3{
@@ -1785,7 +1793,7 @@ main .project3 .explanation{
 
 main .project3-changebg{
   height: 200vh;
-  background-image: url('../../../CC..png');
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
 
   margin-left: -600px;
   height: 200vh;

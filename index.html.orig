@@ -1,0 +1,612 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personal Website.</title>
+      <link rel="stylesheet" href="./css/all.css" !important>
+      <link rel="stylesheet" href="./css/style.css">
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="nav">
+         <div class = "nav-menu flex-row">
+            <div class="nav-brand">
+               <a href="#" class="text-gray">Shivam Saraf.</a>
+            </div>
+            <div class="toggle-collapse">
+               <div class="toggle-icons">
+                  <i class="fas fa-bars">
+                  </i>
+               </div>
+            </div>
+            <div>
+               <ul class = "nav-items">
+                  <li class = "nav-link">
+                     <a href="#Home">Home</a>
+                  </li>
+                  <li class = "nav-link">
+                     <a href="#project-title">Personal Projects</a>
+                  </li>
+                  <li class = "nav-link">
+                     <a href = "#resume">About me</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="social text-gray">
+               <a target="_blank" href="https://github.com/Shivs11"><i class="fab fa-github"></i></a>
+               <a target="_blank" href="mailto:sasaraf@uwaterloo.ca"><i class="far fa-envelope"></i></a>
+               <a target="_blank" href="https://www.instagram.com/_shivam11_/"><i class="fab fa-instagram"></i></a>
+               <a target="_blank" href="https://www.facebook.com/shivamajaysaraf.saraf"><i class="fab fa-facebook"></i></a>
+            </div>
+         </div>
+      </nav>
+      <!-- Navigation -->
+      <!-- Main-Site Section -->
+      <main>
+         <!-- Site title.-->
+         <section class="site-title">
+            <div id = "Home" class="site-background">
+            <h1>Who Am I?</h1>
+            <h2>I am a 
+               <span class="txt-type" data-wait = "5000" data-words = '["Data Engineer", "Full Stack Developer", "Tech Enthusiast", "Dreamer", "Thinker"]'></span>
+            </h2>
+            <div class = "svg">
+               <svg id="svg-main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 320" preserveAspectRatio="xMidYMid meet">
+                  <path fill="#ffffff" fill-opacity="1" d="M0,224L120,240C240,256,480,288,720,266.7C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+               </svg>
+            </div>
+         </section>
+         <!-- Site title.-->
+         <!-- Blog posts Carousel. -->
+         <section class = "space">
+            <div class = "empty"></div>
+         </section>
+         <section class = "working-on">
+            <div class="work">
+               <h2 id="working-heading">What have I been upto?</h2>
+            </div>
+         </section>
+         <section class = 'project1'>
+            <div class = "chat-time">
+<<<<<<< HEAD
+                <h4 id = 'project-title'>Developed a Chat Application.</h4>
+            </div>
+                <div class="project-description">
+                    
+
+                        <div class="card" style="width: 28rem;">
+                            <!--
+                            <div class="pyro">
+                                <div class="before"></div>
+                                <div class="after"></div>
+                            </div>
+                            -->
+
+                            <h3 id = "project-title2">Experience Chat-Time.</h4>
+                            <img class="card-img-top" src="../Chat-app/Images/Interface-1.png" alt="Card image cap">
+                            <div class="content">
+                            <div class="explanation">
+                                <p id = "first-line">A Full-Stack Web Application developed using <i>NodeJS.</i> </p>
+                                <p id = "second-line">Inculcated <i>Websockets</i> to establish real-time connection.</p>
+                                <p id = "third-line">Utilized <i>Express.js</i> to build the interface.</p>
+                            </div>
+                            </div>
+
+
+
+<!--
+                                                      <div class="explanation">
+                                <p id = "first-line">A Full-Stack Web Application developed using <i>NodeJS.</i> </p>
+                                <p id = "second-line">Inculcated <i>Websockets</i> to establish real-time connection.</p>
+                                <p id = "third-line">Utilized <i>Express.js</i> to build the interface.</p>
+                            </div>
+-->
+
+
+                          
+<!--
+  
+-->
+<!--
+<div class="igFrameBar">
+  <div class="igData igData1"></div>
+  <div class="igData igData2"></div>
+  <div class="igData igData3"></div>
+  <div class="igData igData4"></div>
+  <div class="igData igData5"></div>
+</div>
+-->
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+                            <div class="button">
+                                <div id="loginBtn" class="loginBtn"><span><a href="">Learn More.</a></span></div>
+                            </div>
+
+
+                            
+
+                        </div>
+
+
+
+
+                </div>
+
+                <!--<svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 240 1440 320"><path fill="#ffff" 
+                    fill-opacity="1" d="M0,256L80,240C160,224,320,192,
+                    480,197.3C640,203,800,245,960,234.7C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+
+        </section>
+
+
+        <section id="project2" class="project2">
+            
+
+        <div class="animated-title">
+        <div class="text-top">
+        <div>
+        <span>Say</span>
+        <span>Hello to</span>
+        
+        </div>
+        </div>
+        <div class="text-bottom">
+        <div>Connec-Ted!</div>
+        </div>
+        </div>
+
+        
+
+        
+
+<div class="iphone">
+    <div class="border">
+      <form class="chat">
+        <span></span>
+        <div class="messages" id="adobewordpress">
+          <div class="message">
+            <div class="myMessage">
+              <p>What is Connec-Ted?</p>
+              <date><b>Shivam</b> Just now.</date>
+=======
+               <h4 id = 'project-title'>Developed a Chat Application.</h4>
+>>>>>>> master
+            </div>
+            <div class="project-description">
+               <div class="card" style="width: 20rem;">
+                  <!--
+                     <div class="pyro">
+                         <div class="before"></div>
+                         <div class="after"></div>
+                     </div>
+                     -->
+                  <h3 id = "project-title2">
+                  Experience Chat-Time.</h4>
+                  <img class="card-img-top" src="assets/Interface-1.jpg">
+                  <!--
+                     <div class="explanation">
+                         <p id = "first-line">A Full-Stack Web Application developed using <i>NodeJS.</i> </p>
+                         <p id = "second-line">Inculcated <i>Websockets</i> to establish real-time connection.</p>
+                         <p id = "third-line">Utilized <i>Express.js</i> to build the interface.</p>
+                     </div>
+                     -->
+                  <div class="explanation">
+                     <p id = "first-line">A Full-Stack Web Application developed using <i>NodeJS.</i> </p>
+                     <p id = "second-line">Inculcated <i>Websockets</i> to establish real-time connection.</p>
+                     <p id = "third-line">Utilized <i>Express.js</i> to build the interface.</p>
+                  </div>
+                  <!--<div class="igFrameBar">
+                     <div class="igData igData1"></div>
+                     <div class="igData igData2"></div>
+                     <div class="igData igData3"></div>
+                     <div class="igData igData4"></div>
+                     <div class="igData igData5"></div>
+                     <div class="igData igData6"></div>
+                     <div class="igData igData7"></div>
+                     <div class="igData igData8"></div>
+                     <div class="igData igData9"></div>
+                     <div class="igData igData10"></div>
+                     </div>
+                     
+                     -->
+                  <div class="button">
+                     <div id="loginBtn" class="loginBtn"><span><a href="">Learn More.</a></span></div>
+                  </div>
+               </div>
+            </div>
+            <!--<svg xmlns="http://www.w3.org/2000/svg" 
+               viewBox="0 240 1440 320"><path fill="#ffff" 
+               fill-opacity="1" d="M0,256L80,240C160,224,320,192,
+               480,197.3C640,203,800,245,960,234.7C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+         </section>
+         <section id="project2" class="project2">
+            <div class="animated-title">
+               <div class="text-top">
+                  <div>
+                     <span>Say</span>
+                     <span>Hello to</span>
+                  </div>
+               </div>
+               <div class="text-bottom">
+                  <div>Connec-Ted!</div>
+               </div>
+            </div>
+            <div class="iphone">
+               <div class="border">
+                  <form class="chat">
+                     <span></span>
+                     <div class="messages" id="adobewordpress">
+                        <div class="message">
+                           <div class="myMessage">
+                              <p>What is Connec-Ted?</p>
+                              <date><b>Shivam</b> Just now.</date>
+                           </div>
+                        </div>
+                        <div class="message">
+                           <div class="fromThem">
+                              <p>Hey Shivam! I am a bot designed to help people!</p>
+                              <date><b>Connec-Ted</b> Just now.</date>
+                           </div>
+                        </div>
+                        <div class="message">
+                           <div class="myMessage">
+                              <p>How do you help people?</p>
+                              <date><b>Shivam</b> Just now.</date>
+                           </div>
+                        </div>
+                        <div class="message">
+                           <div class="fromThem">
+                              <p>I send SMS's with the latest news and can also send directions to a desired location!</p>
+                              <date><b>Connec-Ted</b> Just now.</date>
+                           </div>
+                        </div>
+                        <div class="message">
+                           <div class="myMessage">
+                              <p>So? What is so special about you?</p>
+                              <date><b>Shivam</b> Just now.</date>
+                           </div>
+                        </div>
+                        <div class="message">
+                           <div class="fromThem">
+                              <p>I can do all of this WITHOUT an internet connection!</p>
+                              <date><b>Connec-Ted</b> Just now.</date>
+                           </div>
+                        </div>
+                        <div class="message">
+                           <div class="myMessage">
+                              <p>Oh wow....</p>
+                              <date><b>Shivam</b> Just now.</date>
+                           </div>
+                        </div>
+                     </div>
+                     <input type="text" id="phone" placeholder="Your message">
+                     <input type="submit" value="Send">
+                  </form>
+               </div>
+            </div>
+            <!-- DEMO -->
+            <a href="http://www.adobewordpress.com/iphone-mesajlar-ekrani" target="_blank" class="article" style="display:none">Read Article</a>
+            <div class="text">
+               <p>Built with</p>
+               <p>
+                  <span class="word wisteria">NodeJS.</span>
+                  <span class="word green">Bootstrap.</span>
+                  <span class="word belize">Twillio.</span>
+                  <span class="word midnight">Python.</span>
+                  <span class="word pomegranate">Love.</span>
+               </p>
+            </div>
+         </section>
+         <section id = "project3" class = "project3">
+            <div class="masked-copy texture-orange big-type">
+               <p>Coffee 'N' Code!</p>
+               <div class="explanation">
+                  <h1>
+                     <div class="goo" contenteditable="true">Elected as a <i>Senior Project Lead</i> <br>at the Biggest Club<br> involved in Technology and Coding: Coffee 'N' Code.</div>
+                  </h1>
+                  <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                  <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                     <defs>
+                        <filter id="goo">
+                           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                           <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                           <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                        </filter>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+            <div class="container">
+               <div class="card">
+                  <div class="face face1">
+                     <div class="content">
+                        <img id = "firstone" src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                        <h3>Responsibilities.</h3>
+                     </div>
+                  </div>
+                  <div class="face face2">
+                     <div class="content">
+                        <li>
+                           <ul>Developed a full fledged course to teach Python.</ul>
+                        </li>
+                        <li>
+                           <ul>Structured the entire course to span over 4 months.</ul>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="face face1">
+                     <div class="content">
+                        <img id = "secondone" src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                        <h3>Work.</h3>
+                     </div>
+                  </div>
+                  <div class="face face2">
+                     <div class="content">
+                        <li id = "secondlist">
+                           <ul>Taught key concepts in Object Oriented Programming.</ul>
+                        </li>
+                        <li id = "secondlist">
+                           <ul>Developed Two Retro Style Games as End of Term projects.</ul>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="face face1">
+                     <div class="content">
+                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                        <h3>Launch.</h3>
+                     </div>
+                  </div>
+                  <div class="face face2">
+                     <div class="content">
+                        <li id = "thirdlist">
+                           <ul>Recorded a massive turnout of over 200 people for this project.</ul>
+                        </li>
+                        <li id = "thirdlist">
+                           <ul>Introduced Programming to over 100 people from various faculties.</ul>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id = "5" class="meettheteam">
+            <p class="popout">
+               <span>M</span>
+               <span>E</span>
+               <span>E</span>
+               <span>T</span><br>
+               <span>T</span>
+               <span>H</span>
+               <span>E</span><br>
+               <span>T</span>
+               <span>E</span>
+               <span>A</span>
+               <span>M!</span>
+            </p>
+         </section>
+         <section class="project3-changebg">
+         </section>
+         <section id = "project4" class="project4">
+            <div class="title">
+            <h1>Work<br/>Experience.</h1>
+            <!-- Work Experience section: Novantas Inc. -->
+            <div class="inner">
+               <p id = "Novantas">
+                  <a href="https://www.novantas.com/" target="_blank">
+                  <img class = "icon" src="assets/novantas-logo.png" alt="">
+                  </a>
+                  <b id = "company">Novantas Inc.</b>
+                  <span class="right">
+                  <i>Fall 2020</i>
+                  </span>
+                  <br>
+                  <b id = "description">Data Engineering Intern.</b>
+                  <span class="right-2">
+                  <i id = "location.">New York, USA.</i>
+                  </span>
+                  <br>
+                  <br>
+               <ul id = "work-description">
+                  <li>
+                     <p class = "firstline">Extensively used <b><i>Scala</i></b> and <b><i>Spark</i></b> to improve the performance and the optimization of</p>
+                     <p class="secondline1">the existing algorithms in <b><i>Hadoop</i></b> and <b><i>Hive</i></b> using <b><i>Spark-SQL and RDD's.</i></b></p>
+                  </li>
+                  <li>
+                     <p class="firstline2">Worked on performance tuning in <b><i>Hive</i></b> and <b><i>Impala</i></b> using multiple methods such as</p>
+                     <p class="secondline"><b><i>Dynamic Partioning</i></b> and <b><i>cost based optimization</i></b> coupled with the creation of several  </p>
+                     </b>
+                     <p class="thirdline">dashboards in <b><i>Tableau.</i></b></p>
+                  </li>
+                  <li>
+                     <p class="firstline3">Developed <b><i>PMML scripts</i></b> to execute analytical applications and exchange predictive</p>
+                     <p class="secondline3">models produced by <b><i>data mining</i></b> and <b><i>machine learning algorithms.</i></b></p>
+                  </li>
+               </ul>
+               </p>
+            </div>
+         </section>
+         <section id = "resume" class="resume">
+            <div class="heading">
+               <p class = "heading-for-resume">A bit more about Me!</p>
+            </div>
+            <div class="code">
+               <div class="console">
+                  > Shivam.origin
+                  <br>
+                  <span class="answer">
+                  => "Mumbai, India"
+                  </span>
+                  <br>
+                  <br>
+                  > Shivam.education
+                  <br>
+                  <span class="answer">
+                  => "University of Waterloo, Canada"
+                  </span>
+                  <br>
+                  <br>
+                  > Shivam.major
+                  <br>
+                  <span class="answer">
+                  => "Computer Science"
+                  </span>
+                  <br>
+                  <br>
+                  > Shivam.Expected_Graduation
+                  <br>
+                  <span class="answer">
+                  => "September 2024"
+                  </span>
+                  <br>
+                  <br>
+                  > Shivam.interests
+                  <br>
+                  <span class="answer">
+                     => ["Football", "Cricket", "Coding", "Table Tennis", "Music", "Reading",
+                     <div class="moveleft">"Technology", "Public Speaking", "Coffee"]</div>
+                  </span>
+                  <br>
+                  <br>
+                  <div class="specialone">
+                     > Shivam.Fav_Team
+                  </div>
+                  <br>
+                  <span class="answer-specialone">
+                  => "Real Madrid CF"
+                  </span>
+                  <br>
+                  <br>
+                  <div class="newone">
+                     > Shivam.Fav_Food
+                  </div>
+                  <br>
+                  <span class="answer-newone">
+                  => "Grilled Cheese"
+                  </span>
+                  <br>
+                  <div class="newone">
+                     > Shivam.Fav_Drink
+                  </div>
+                  <br>
+                  <span class="answer-newone">
+                  => "Espresso"
+                  </span>
+                  <br>
+                  <div class="newone">
+                     > Shivam.Social_Media
+                  </div>
+                  <br>
+                  <span class="answer-newone">
+                  => [<a href="https://www.linkedin.com/in/shivam-saraf11/">LinkedIn</a>, 
+                  <a href="https://www.facebook.com/shivamajaysaraf.saraf">Facebook</a>,
+                  <a href="https://t.me/Shivam_A_Saraf">Telegram</a>]
+                  </span>
+                  <br>
+                  <div class="newone">
+                     > Shivam.resume
+                  </div>
+                  <br>
+                  <span class="answer-newone">
+                  => <a href="">Link</a>
+                  </span>
+                  <div class="newone">
+                     > Shivam.email
+                  </div>
+                  <br>
+                  <span class="answer-newone">
+                  => [<a target="_blank" href="mailto:shivamasaraf@yahoo.com">Yahoo</a>,
+                  <a href="mailto:shivamasaraf10@gmail.com">Gmail</a>]
+                  </span>
+               </div>
+            </div>
+         </section>
+         <section class = "Contact-Me">
+            <h1>Let's Get In Touch!</h1>
+            <ol class="articles">
+               <li class="articles__article" style="--animation-order:1">
+                  <a href = "https://github.com/Shivs11" target="_blank" class="articles__link">
+                     <div class="articles__content articles__content--lhs">
+                        <h2 id = "GitHub" class="articles__title">GitHub!</h2>
+                        <div class="articles__footer">
+                           <p id = "GitHub-p">A glimpse into more of my work.</p>
+                        </div>
+                     </div>
+                     <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 id = "GitHub" class="articles__title">GitHub!</h2>
+                        <div class="articles__footer">
+                           <p id = "GitHub-p">A glimpse into more of my work.</p>
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li class="articles__article" style="--animation-order:2">
+                  <a href = "mailto:sasaraf@uwaterloo.ca" target="_blank" class="articles__link">
+                     <div class="articles__content articles__content--lhs">
+                        <h2 id = "Mail" class="articles__title">Mail!</h2>
+                        <div class="articles__footer">
+                           <p id = "Mail-p">Feel free to shoot me a message.</p>
+                        </div>
+                     </div>
+                     <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 id = "Mail" class="articles__title">Mail.</h2>
+                        <div class="articles__footer">
+                           <p id = "Mail-p">Feel free to shoot me a message.</p>
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li class="articles__article" style="--animation-order:3">
+                  <a href="https://www.linkedin.com/in/shivam-saraf11/" target="_blank" class="articles__link">
+                     <div class="articles__content articles__content--lhs">
+                        <h2 id = "LinkedIn" class="articles__title">LinkedIn!</h2>
+                        <div class="articles__footer">
+                           <p id = "L-p">Feel free to shoot me a message.</p>
+                        </div>
+                     </div>
+                     <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 id = "LinkedIn" class="articles__title">LinkedIn!</h2>
+                        <div class="articles__footer">
+                           <p id = "L-p">Feel free to shoot me a message.</p>
+                        </div>
+                     </div>
+                  </a>
+               </li>
+            </ol>
+            <footer>&copy; Shivam Saraf, 2020.</footer>
+         </section>
+         <!--
+            <section class="footer">
+              
+            </section>
+            -->
+      </main>
+      <!-- Main-Site Section -->
+      <script src = "./js/Jquery3.5.1.min.js"></script>
+      <script src = "./js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+   </body>
+</html>
+

@@ -2692,6 +2692,12 @@ main .tryouts{
 /* iphone XR, 11 */
 @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
 
+  @viewport{
+    viewport-fit: cover;
+  }
+  body { padding: env(safe-area-inset, 0px); }
+
+
 .site-title h1{
   position: relative;
   top: 50px;
@@ -2746,7 +2752,7 @@ main .tryouts{
 }
 
 .project-description .card{
-  width: 400px;
+  display: none;
 }
 
 

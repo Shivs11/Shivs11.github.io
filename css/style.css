@@ -280,6 +280,7 @@ main .project1{
     height: 280vh;
     background: black;
     border-radius: 1.2%;
+    border: 1px solid;
 }
 
 main .project1 h4{
@@ -2729,7 +2730,7 @@ main .tryouts{
 /* What I have been working on- section */
 
 .working-on h2{
-  font-size: 50px;
+  font-size: 40px;
   position: relative;
   top: 100px;
   left: -29px;
@@ -2750,10 +2751,16 @@ main .tryouts{
 .project-description #project-title2{
   font-size: 15px;
   position: relative;
+<<<<<<< HEAD
   top: 50px;
   padding-top: 90px;
   left: -120px;
 
+=======
+  top: -20px;
+
+  text-align: center;
+>>>>>>> Reformatting
 }
 
 
@@ -2764,6 +2771,15 @@ main .tryouts{
   border-style: groove;
 }
 
+main .project1{
+  border-radius: 40px;
+  height: 200vh;
+}
+
+main .project1 .card{
+  border-radius: 40px;
+  width: 20%;
+}
 
 
 

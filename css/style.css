@@ -580,6 +580,46 @@ main .project1 .card img{
   width: 250px;
 }
 
+
+#second-card .card--hover ul{
+  display: inline-flexbox;
+  position: relative;
+  padding-left: 10px;
+  width: 250px;
+
+}
+#third-card .card--hover ul{
+  display: inline-flexbox;
+  position: relative;
+  align-items: center;
+  left: -15px;
+}
+
+#first-card p{
+  text-align: justify;
+  padding-top: 10%;
+
+}
+
+#first-card b{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#second-card b{
+  font-weight: 600;
+  text-decoration: underline;
+}
+#second-card .card--hover li{
+  text-align: justify;
+  padding-top: 1px;
+}
+
+#third-card p{
+  text-align: justify;
+  padding-top: 10%;
+}
+
 #first-card #no-hover, #first-card #hover, #second-card #no-hover, #second-card #hover, #third-card #no-hover, #third-card #hover{
   color: black;
   text-align: center;
@@ -598,6 +638,10 @@ main .project1 .card img{
   border-width: thick;
   border: double;
   border-width: 12px;
+}
+
+#fourth-card i, #fifth-card i, #fourth-card #tools, #fifth-card #tools{
+  text-decoration: underline;
 }
 
 

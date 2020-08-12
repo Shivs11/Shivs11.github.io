@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kavivanar&family=Rancho&family=Walter+Turncoat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
 
 html,body{
     margin: 0%;
@@ -287,8 +288,9 @@ main .project1 h4{
     padding-top: 12px;
     padding-left: 12px;
     color: white;
-    font-family: 'Rubik', sans-serif !important;
+    font-family: 'Recursive', sans-serif;
     font-size: 120px;
+    font-style: italic;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -302,6 +304,8 @@ main .project1 #project-title2{
     top: -40px;
     font-family: 'Rubik', sans-serif !important;
     font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: white;
     text-align: center;
 
 }
@@ -584,15 +588,21 @@ main .project1 .card img{
 #second-card .card--hover ul{
   display: inline-flexbox;
   position: relative;
-  padding-left: 10px;
-  width: 250px;
-
+  padding-top: 2.5px;
+  width: 285px;
+  left: -54px;
+  
 }
 #third-card .card--hover ul{
   display: inline-flexbox;
   position: relative;
   align-items: center;
-  left: -15px;
+  left: -54px;
+  width: 290px;
+  top: -20px;
+}
+#third-card .card--hover p{
+  margin: 0 0 5px 0;
 }
 
 #first-card p{
@@ -612,12 +622,21 @@ main .project1 .card img{
 }
 #second-card .card--hover li{
   text-align: justify;
-  padding-top: 1px;
+  padding-top: -0.6px;
+  margin: 0 0 60px 0;
+
 }
+
+
 
 #third-card p{
   text-align: justify;
   padding-top: 10%;
+}
+
+#third-card b{
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 #first-card #no-hover, #first-card #hover, #second-card #no-hover, #second-card #hover, #third-card #no-hover, #third-card #hover{
@@ -638,12 +657,45 @@ main .project1 .card img{
   border-width: thick;
   border: double;
   border-width: 12px;
+  font-family: 'Recursive', sans-serif;
+  font-weight: 500;
+}
+
+#first-card #heading-chattime{
+  padding-left: 2.5em;
 }
 
 #fourth-card i, #fifth-card i, #fourth-card #tools, #fifth-card #tools{
   text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
 }
 
+
+#fourth-card .tool1, #fifth-card .tool2{
+  text-align: center;
+}
+
+#fourth-card ul, #fifth-card ul{
+  padding-top: 4px;
+  list-style: none;
+}
+
+#fourth-card li, #fifth-card li{
+  margin: 0 0 40px 0;
+  font-family: 'Recursive', sans-serif;
+  text-align: justify;
+}
+
+
+
+#fourth-card ul li::before, #fifth-card ul li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: white; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; 
+}
 
 
 main .project1 .explanation #first-line{
@@ -2864,6 +2916,7 @@ main .tryouts{
 
 .project1 #project-title{
   font-size: 65px;
+
 }
 
 .project-description #project-title2{

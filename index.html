@@ -123,7 +123,8 @@
           </div>
           <div class="card--hover">
               <h2 id = "hover">Description.</h2>
-              <p>Experience <b>Chat-Time</b>: A Full-Stack Chat application developed using <b>Node, Express </b>and <b>MongoDB</b> to provide a secure and a personalized experience when chatting with your loved ones.</p>
+              <p id = "heading-chattime">Experience <b>Chat-Time</b>:</p> 
+              <p>A Full-Stack Chat application developed using <b>Node, Express </b>and <b>MongoDB</b> to provide a secure and a personalized experience when chatting with your loved ones.</p>
           </div>
       </a>
       <div class="card--border"></div>
@@ -138,8 +139,8 @@
        <div class="card--hover">
            <h2 id = "hover">Features.</h2>
            <ul>
-              <li><p>Consists of a <b>OAuth</b> <b>User-Authentication Framework</b> to help store the client's personal details for Logging and Signing-In.</p></li>
-              <li><p>User-details are encrypted using <b>Hashing Algorithms</b> and are not reachable to the adminstrator of the application; ensuring confidentiality among the clients and the developer of the application.</p></li>
+              <li><p>Consists of an <b>OAuth</b> <b>User-Authentication Framework</b> to help store a client's personal details for Logging and Signing-In.</p></li>
+              <li><p>User-details are encrypted using <b>Hashing Algorithms</b> and are not reachable to the developer of the application.</p></li>
            </ul>
        </div>
    </a>
@@ -156,7 +157,7 @@
            <h2 id = "hover">What's Next?</h2>
            <ul>
             <p>Enabling <b>Video</b> and <b>Audio Calls</b> over the Internet.</p>
-            <p>Creating multiple <b>Rooms</b> for allowing clients to seperately communicate with each other.</p>
+            <p>Creating private and secure <b>Rooms</b> which shall allow clients to seperately communicate with each other.</p>
             <p>Integrating <b>OAuth2</b> to improve security due to the availability of <b>short-lived access tokens.</b></p>
            </ul>
 
@@ -169,12 +170,16 @@
 <div id = "fourth-card" class="card card--dark">
    <a href="androidupdate">
        <div class="card--display"><i class="material-icons">Back-End.</i>
-           <h2>Technology used for developing this aspect of the application.</h2>
+           <h2>Hover to understand the Back-End Frameworks used for Chat-Time.</h2>
        </div>
        <div class="card--hover">
-           <h2 id = "tools">NodeJS and MongoDB.</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
-           <p class="link">Click to see project</p>
+           <h2 class = "tool1" id = "tools">NodeJS and MongoDB.</h2>
+           <ul>
+              <li>Used NodeJS to develop the server-side of the application.</li>
+              <li>MongoDB was used to store user the Hashed User-Credentials.</li> 
+              <li>Utilized the Websocket API to establish a connection between the server and multiple clients. The WebsocketClient and the WebsocketServer provided both client and server functionality.</li>
+           </ul>
+
        </div>
    </a>
    <div class="card--border"></div>
@@ -184,12 +189,15 @@
 <div id = "fifth-card" class="card card--dark">
    <a href="phonesoff">
        <div class="card--display"><i class="material-icons">Front-End.</i>
-           <h2>Technology used for developing this aspect of the application.</h2>
+           <h2>Hover to understand the Front-End Frameworks used for Chat-Time.</h2>
        </div>
        <div class="card--hover">
-           <h2 id="tools">HTML, CSS3, JavaScript, Express.js.</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
-           <p class="link">Click to see project</p>
+           <h2 class = "tool2" id="tools">HTML, CSS3 and Express.</h2>
+           <ul>
+              <li>Utilized HTML and CSS3 to control the layout and the properties of all the elements on the webpage.</li>
+              <li>Express was also used to structure the application to handle multiple HTTP requests at specific URL's.</li>
+              <li>Combining the above frameworks helped to develop the application in a secure and a modern way. </li>
+           </ul>
        </div>
    </a>
    <div class="card--border"></div>

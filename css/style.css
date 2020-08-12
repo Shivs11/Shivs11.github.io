@@ -349,15 +349,41 @@ main .project1 #project-title2{
   text-decoration: none;
   color: black;
   display: block;
-  transition: 0.25s ease;
 }
-/* Trying */
+
+@media(max-width:1500px){
+  .my-flex-container .card{
+    pointer-events: none;
+  }
+
+  .my-flex-container .card--display{
+    display: none;
+  }
+
+  #first-card .card--hover, #second-card .card--hover, #third-card .card--hover, #fourth-card .card--hover, #fifth-card .card--hover{
+    display: inline;
+  }
 
 
-
-.my-flex-container .card a:hover, .my-flex-container .card a:active {
-  transform: translate(-30px, -30px);
 }
+
+@media(min-width:1500px){
+  .my-flex-container .card a{
+    transition: 0.25s ease;
+  }
+
+
+
+  .my-flex-container .card a:hover, .my-flex-container .card a:active {
+    transform: translate(-30px, -30px);
+  }
+
+}
+
+
+
+
+
 .my-flex-container .card a:hover .card--display, .my-flex-container .card a:active .card--display{
   display: none;
 }
@@ -2750,12 +2776,26 @@ main .tryouts{
 
 main .project1{
   border-radius: 40px;
-
 }
 
-main .project1 .card{
+main .project1 .my-flex-container .a{
   border-radius: 40px;
-  width: 20%;
+}
+
+/* Puttin gall the cards on the left */
+
+.my-flex-container{
+  position: relative;
+  left: -30px;
+}
+
+/*Trying to remove the hovering effects completely */
+
+
+/* First card on project1 */
+main .my-flex-container #first-card{
+  width: 70em;
+  position: relative;
 }
 
 /* Project1 cards */
@@ -2763,6 +2803,21 @@ main .project1 .card{
 .my-flex-container .card a{
   height: 340px;
 }
+
+/* Personalisation to each card to make it look perfect */
+
+#first-card #heading-chattime{
+  position: relative;
+  left: -18px;
+}
+
+#first-card p{
+  text-align: center;
+}
+#third-card .card--hover ul{
+  left: -60px;
+}
+
 
 }
  

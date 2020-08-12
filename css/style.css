@@ -616,55 +616,60 @@ main .project1 .explanation p{
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
-.animated-title {
-  color: #222;
-  font-family: Roboto, Arial, sans-serif;
-  height: 90vmin;
-  display: none;
-  position: relative;
-  left: 700px;
-  top: 350px;
-  transform: translate(-50%, -50%);
-  width: 90vmin;
+
+/* Only for big screens */
+@media(min-width: 800px){
+  .animated-title {
+    color: #222;
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    display: none;
+    position: relative;
+    left: 700px;
+    top: 350px;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #000;
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: #767676;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }
 }
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-.animated-title > div div {
-  font-size: 12vmin;
-  padding: 2vmin 0;
-  position: absolute;
-}
-.animated-title > div div span {
-  display: block;
-}
-.animated-title > div.text-top {
-  border-bottom: 1vmin solid #000;
-  top: 0;
-}
-.animated-title > div.text-top div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom: 0;
-  transform: translate(0, 100%);
-}
-.animated-title > div.text-top div span:first-child {
-  color: #767676;
-}
-.animated-title > div.text-bottom {
-  bottom: 0;
-}
-.animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
-}
+
 
 
 
@@ -974,8 +979,8 @@ form.chat *{
 
 
 
-  
-main .project2 .text{
+@media(min-width: 800px){
+  main .project2 .text{
     font: 400 15px 'Open Sans', sans-serif;
     font-size:100px;
     position: relative;
@@ -986,6 +991,8 @@ main .project2 .text{
     top: 22%;
     margin-top: -200px;
   }
+}  
+
   
 main .project2 .text  p{
     display: inline-block;
@@ -2850,6 +2857,82 @@ main .my-flex-container #first-card{
 text-align: left
 }
 
+#fifth-card a{
+  bottom: 20px;
+}
+
+
+/* Project 2 */
+
+.project2{
+  height: 150vh;
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  display: none;
+  position: relative;
+  left: 320px;
+  top: 250px;
+  transform: translate(-50%, -50%);
+  width: 120vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 200em;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+ 
+  transform: translate(0, -100%);
+}
+
+/* Changing Built with as well */
+
+main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 45px;
+  position: relative;
+  width: 230px;
+  left: 20px;
+  height: 40px;
+  top: 22%;
+  margin-top: -200px;
+}
+ 
 }
  
 

@@ -146,9 +146,13 @@ body.onscroll = function(){
 
 
 // Code to show Project number 2.
-$(document).scroll(function() {
+
+// Only run for big screens though.
+
+if(screen.width > 1500){
+  $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 2400) {
+    if (y > 2600) {
       $('.animated-title').fadeIn();
     } else if(y >3200) {
       $('.animated-title').fadeOut();
@@ -157,6 +161,23 @@ $(document).scroll(function() {
         $('.animated-title').fadeOut();
     }
   });
+}
+
+// IPhones and other mobile devices.
+if(screen.width < 500){
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 4400) {
+      $('.animated-title').fadeIn();
+    } else if(y >5200) {
+      $('.animated-title').fadeOut();
+    }
+    else{
+        $('.animated-title').fadeOut();
+    }
+  });
+}
+
 
 
 

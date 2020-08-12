@@ -518,6 +518,10 @@ main .project1 #project-title2{
   text-align: center;
 }
 
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: none;
+}
+
 #fourth-card ul, #fifth-card ul{
   padding-top: 4px;
   list-style: none;
@@ -2786,7 +2790,7 @@ main .project1 .my-flex-container .a{
 
 .my-flex-container{
   position: relative;
-  left: -30px;
+  left: -40px;
 }
 
 /*Trying to remove the hovering effects completely */
@@ -2818,6 +2822,33 @@ main .my-flex-container #first-card{
   left: -60px;
 }
 
+#fourth-card a, #fifth-card a{
+  width: 17em;
+  height: 30em;
+  position: relative;
+  left: -67px;
+}
+
+#fourth-card .tool1, #fifth-card .tool2{
+  display: none;
+}
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+  position: relative;
+  left: 22px;
+
+}
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
+
+#fourth-card li, #fifth-card li{
+text-align: left
+}
 
 }
  

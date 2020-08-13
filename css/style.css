@@ -2956,7 +2956,12 @@ main .project3{
   top: -10px;
   top: 50px;
   left: -6px;
-  font-size: 135px;
+  font-size: 125px;
+}
+
+.firstline{
+  position: relative;
+  left: 13px;
 }
 
 .project3 .secondline{
@@ -2967,7 +2972,7 @@ main .project3{
 
 .project3 .thirdline{
   position: relative;
-  left: 24px;
+  left: 32px;
 }
 
 .project3 .container{
@@ -3113,6 +3118,14 @@ main .project3-changebg{
   position: relative;
   left: 440px;
 }
+
+
+/* Work-Experience Section */
+.project4 .title h1{
+  font-size: 100px;
+}
+
+
 }
  
 

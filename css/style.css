@@ -2946,7 +2946,7 @@ main .project2 .text{
 
 /* Project 3 */
 main .project3{
-  min-height: 350vh;
+  min-height: 380vh;
   background: black;
   overflow: hidden;
 }
@@ -2971,7 +2971,7 @@ main .project3{
   top: -10px;
   top: 50px;
   left: -6px;
-  font-size: 110px;
+  font-size: 125px;
   color: #FFA177FF;
 }
 
@@ -3110,7 +3110,7 @@ main .project3{
   margin-bottom: 85px;
 }
 
-.container .card #increase-height{
+.container .card .face.face2{
   height: 270px;
 }
 

@@ -2950,13 +2950,28 @@ main .project3{
   background: black;
   overflow: hidden;
 }
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+  font-size: 64px;
+  height: 60vh;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  font-weight: 600; /* Nice, chunky, bold! */
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.masked-copy { 
+  /* This is it! Magic: */
+  -webkit-background-clip: text;
+  color: transparent !important;
+  
+}
 
 .project3 p{
   position: relative;
   top: -10px;
   top: 50px;
   left: -6px;
-  font-size: 125px;
+  font-size: 110px;
 }
 
 .firstline{

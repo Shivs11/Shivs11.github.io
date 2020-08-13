@@ -2932,6 +2932,33 @@ main .project2 .text{
   top: 22%;
   margin-top: -200px;
 }
+
+
+/* Project 3 */
+.project3 p{
+  position: relative;
+  top: -10px;
+  top: 50px;
+  left: -6px;
+  font-size: 135px;
+}
+
+.project3 .secondline{
+  position: relative;
+  left: 120px;
+
+}
+
+.project3 .thirdline{
+  position: relative;
+  left: 24px;
+}
+
+.project3 .container{
+  top: 1280px;
+}
+
+
  
 }
  

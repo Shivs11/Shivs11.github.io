@@ -3197,13 +3197,15 @@ main .project4 b{
 main .project4 #company{
   position: relative;
   top: 9px;
-  left: 20px;
+  left: -72px;
 }
 main .project4 #description{
   position: relative;
-  left: 42px;
+  left: 22px;
   top: 6px;
 }
+
+
 
 main .project4 .right{
   position: relative;

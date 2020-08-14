@@ -3247,6 +3247,12 @@ main .resume .code{
   left: -30px;
 }
 
+main .resume .console{
+  height: 700px;
+  border-bottom: 15px solid #ccc;
+  
+}
+
 main .resume .breaknow{
   position: relative;
 }
@@ -3260,6 +3266,9 @@ main .resume .breaknow{
   position: relative;
   left: 30px;
 }
+
+
+
 
 }
  

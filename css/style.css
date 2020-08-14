@@ -3197,7 +3197,7 @@ main .project4 b{
 main .project4 #company{
   position: relative;
   top: 9px;
-  left: -49px;
+  left: 0px;
 }
 main .project4 #description{
   position: relative;
@@ -3215,7 +3215,7 @@ main .project4 .right{
 
 main .project4 .right-2{
   position: relative;
-  left: -205px;
+  left: -215px;
   top: 65px;
 }
 

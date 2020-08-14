@@ -3309,6 +3309,10 @@ main .articles__footer{
   width: 900px;
 }
 
+main .Contact-Me #L-p, main .Contact-Me #Mail-p{
+  position: relative;
+  left: -5px;
+}
 
 }
  

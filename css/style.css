@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
 
 html,body{
     margin: 0%;
@@ -3190,14 +3191,18 @@ main .project4 img{
   width: 120px;
 }
 main .project4 b{
+  font-weight: 600;
+  font-style: normal;
   position: relative;
   left: -50px;
 }
 
 main .project4 #company{
+  font-weight: 600;
+  font-style: normal;
   position: relative;
   top: 9px;
-  left: -49px;
+  left: -68px;
 }
 main .project4 #description{
   position: relative;

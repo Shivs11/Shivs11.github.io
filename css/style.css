@@ -1998,6 +1998,15 @@ main .project4 #company, #description{
 }
 
 
+@media(max-width:800px){
+  main .project4 #work-description{
+    display: none;
+}
+
+/* Need a nice border as well */
+
+}
+
 main .project4 #work-description{
   margin-left: 9.7rem;
   color: black;
@@ -2688,7 +2697,11 @@ main .tryouts{
 /* iphone X , XS, 11 Pro */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
 
-
+html,body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height:100%; /*A value other than height:auto needs to be set*/
+ }
 
 /* Getting my heading down a bit */  
 .site-title h1{
@@ -3143,10 +3156,73 @@ main .project3-changebg{
 
 
 /* Work-Experience Section */
-.project4 .title h1{
-  font-size: 100px;
+
+main .project4{
+  height: 1150px;
 }
 
+.project4 .title h1{
+  font-size: 60px;
+  position: relative;
+  top: -80px;
+  
+}
+
+main .project4 .inner{
+  width: 500px;
+}
+
+main .project4 #Novantas{
+  position: relative;
+  left: 75px;
+  height: 157px;
+  margin-left: -20px;
+  top: -200px;
+
+}
+
+main .project4 img{
+  position: relative;
+  left: 5px;
+  top: 7px;
+  
+  height: 120px;
+  width: 120px;
+}
+main .project4 b{
+  position: relative;
+  left: -65px;
+}
+
+main .project4 #company{
+  position: relative;
+  top: 9px;
+}
+main .project4 #description{
+  position: relative;
+  left: 6px;
+  top: 6px;
+}
+
+main .project4 .right{
+  position: relative;
+  left: -194px;
+  top: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: -221px;
+  top: 65px;
+}
+
+
+main .project4 #Novantas{
+  border: 1px;
+  border-style: groove;
+  border-radius: 17px;
+  border-width: thick;
+}
 
 }
  

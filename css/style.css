@@ -3004,7 +3004,7 @@ main .project3{
 .project3 .goo{
   position: relative;
   top: -160px;
-  left: -36px;
+  left: -20px;
 }
 .project3 .explanation .goo #newline::before{
   content: '\a';

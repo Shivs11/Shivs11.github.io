@@ -1713,7 +1713,7 @@ main .project3 .explanation{
   left: 27px;
 }
 
-@media(min-width:1000px){
+@media(min-width:700px){
   .container .card .face.face1
 {
   position: relative;

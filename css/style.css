@@ -3136,6 +3136,12 @@ main .project3-changebg{
 }
 
 
+.project3 .container .face.face2 li{
+  position: relative;
+  left: -40px;
+}
+
+
 /* Work-Experience Section */
 .project4 .title h1{
   font-size: 100px;

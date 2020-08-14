@@ -2075,6 +2075,7 @@ main .resume{
   background-image: linear-gradient( #FFDEE9 0%, #B5FFFC 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  overflow: hidden;
 
 }
 
@@ -3237,6 +3238,28 @@ main .project4 #Novantas{
 }
 
 
+/* Resume section */
+
+main .resume{
+  height: 1200px;
+}
+main .resume .code{
+  left: -30px;
+}
+
+main .resume .breaknow{
+  position: relative;
+}
+
+main .resume .breaknow::before{
+  content: '\a';
+  white-space: pre;
+}
+
+main .resume .breaknow{
+  position: relative;
+  left: 30px;
+}
 
 }
  

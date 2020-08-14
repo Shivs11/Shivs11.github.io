@@ -3197,10 +3197,11 @@ main .project4 b{
 main .project4 #company{
   position: relative;
   top: 9px;
+  left: 20px;
 }
 main .project4 #description{
   position: relative;
-  left: 22px;
+  left: 42px;
   top: 6px;
 }
 

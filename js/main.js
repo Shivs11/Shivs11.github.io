@@ -118,6 +118,7 @@ var parent2 = document.getElementsByClassName('project1')
 
 body.onscroll = function(){
     console.log(document.documentElement.scrollTop)
+    console.log("HEY")
     //console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
 
 
@@ -184,6 +185,8 @@ window.addEventListener("scroll", function() {
 
 
 
+
+
 if(screen.width > 500){
   window.addEventListener("scroll", function() {
     var elementTarget = document.getElementById("fifth-card");
@@ -203,18 +206,19 @@ if(screen.width > 500){
 
 // IPhones and other mobile devices.
 if(screen.width < 500){
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 4400) {
+
+  window.addEventListener("scroll", function() {
+    var elementTarget = document.getElementById("fifth-card");
+    if (window.scrollY >= (elementTarget.offsetTop)) {
+      //var y = $(this).scrollTop();
+      //if (y > 2600) {
       $('.animated-title').fadeIn();
-    } else if(y >5200) {
-      $('.animated-title').fadeOut();
+      //} else if(y >3200) {
+      //$('.animated-title').fadeOut();
     }
     else{
-        $('.animated-title').fadeOut();
-    }
-  });
-}
+      $('.animated-title').fadeOut();
+    }})}
 
 
 

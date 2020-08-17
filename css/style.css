@@ -1009,7 +1009,8 @@ form.chat *{
     font-size:100px;
     position: relative;
     width: 450px;
-    left: 550px;
+    /*left: 550px;*/
+    left: 40%;
     margin-left: -200px;
     height: 40px;
     top: 22%;

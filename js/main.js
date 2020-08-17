@@ -176,9 +176,9 @@ window.addEventListener("scroll", function() {
     //$('.animated-title').fadeOut();
     //}
   }
-  else{
+  else if(window.scrollY >= (elementTarget.offsetTop)){
     $('.animated-title').fadeOut();
-    }
+  }
   }
 )};
 

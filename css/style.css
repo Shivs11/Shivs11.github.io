@@ -328,7 +328,6 @@ main .project1 #project-title2{
   flex-wrap: wrap;
   padding: 20px;
   border-radius: .5em;
-  /*min-height: 120vh;*/
   min-height: 700px;
   justify-content: space-evenly;
   overflow: hidden;
@@ -354,7 +353,7 @@ main .project1 #project-title2{
   display: block;
 }
 
-@media(max-width:1500px){
+@media(max-width:1000px){
   .my-flex-container .card{
     pointer-events: none;
   }
@@ -370,7 +369,7 @@ main .project1 #project-title2{
 
 }
 
-@media(min-width:1500px){
+@media(min-width:800px){
   .my-flex-container .card a{
     transition: 0.25s ease;
   }
@@ -543,9 +542,31 @@ main .project1 #project-title2{
   color: white; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
+  min-width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; 
 }
+
+@media(min-width:900px) and (max-width:1500px){
+  .my-flex-container{
+    align-items: center;
+    justify-content: center;
+  }
+  #fourth-card, #fifth-card{
+    min-width: 470px;
+    max-width: 500px;
+  }
+
+  #first-card, #second-card, #third-card{
+    min-width: 270px;
+    max-width: 270px;
+  }
+  #first-card{
+    position: relative;
+    right: 8%;
+  }
+}
+
+
 
 
 main .project1 .explanation #first-line{
@@ -1661,6 +1682,7 @@ main .project3 .explanation{
   --color-highlight: #fff;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
 
 .goo {
   font-size: 3rem;

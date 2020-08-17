@@ -2767,7 +2767,7 @@ main .tryouts{
 
 .nav .nav-menu, .nav .nav-items{
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 32px;
 }
 
 .toggle-icons{
@@ -2884,10 +2884,6 @@ main .project1 .my-flex-container .a{
   position: relative;
   left: 22px;
 
-}
-#fourth-card .phoneview span, #fifth-card .phoneview span{
-  position: relative;
-  left: 26px;
 }
 
 #fourth-card li, #fifth-card li{

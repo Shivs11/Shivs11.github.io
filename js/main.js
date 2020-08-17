@@ -148,8 +148,8 @@ body.onscroll = function(){
 // Code to show Project number 2.
 
 // Only run for big screens though.
-
-if(screen.width > 1500){
+/*
+if(screen.width > 1000){
   $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 2600) {
@@ -162,6 +162,44 @@ if(screen.width > 1500){
     }
   });
 }
+
+*/
+
+if(screen.width > 1500){
+window.addEventListener("scroll", function() {
+  var elementTarget = document.getElementById("fourth-card");
+  if (window.scrollY >= (elementTarget.offsetTop)) {
+    //var y = $(this).scrollTop();
+    //if (y > 2600) {
+    $('.animated-title').fadeIn();
+    //if(y >3200) {
+    //$('.animated-title').fadeOut();
+    //}
+  }
+  else{
+    $('.animated-title').fadeOut();
+    }
+  }
+)};
+
+
+
+if(screen.width > 500){
+  window.addEventListener("scroll", function() {
+    var elementTarget = document.getElementById("fifth-card");
+    if (window.scrollY >= (elementTarget.offsetTop)) {
+      //var y = $(this).scrollTop();
+      //if (y > 2600) {
+      $('.animated-title').fadeIn();
+      //} else if(y >3200) {
+      //$('.animated-title').fadeOut();
+    }
+    else{
+      $('.animated-title').fadeOut();
+    }})}
+
+
+
 
 // IPhones and other mobile devices.
 if(screen.width < 500){
@@ -255,4 +293,3 @@ if(screen.width < 500){
 
 
   
-

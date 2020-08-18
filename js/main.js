@@ -13,10 +13,13 @@ $(document).ready(function(){
         $nav.toggleClass('collapse')
     })
 
+    if(screen.width < 500){
     /* Collapsing the navbar */
     $anchors.click(function(){
       $nav.toggleClass('collapse')
     })
+    }
+
 
 });
 

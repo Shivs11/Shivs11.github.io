@@ -2911,7 +2911,10 @@ text-align: left
   min-width: 270px;
 }
 
-
+#fourth-card{
+  position: relative;
+  bottom: 90px;
+}
 
 
 /* Project 2 */
@@ -3300,6 +3303,10 @@ main .resume .breaknow{
 
 /* Last Section -> Let's get in touch */
 
+
+main .Contact-Me{
+  height: 170vh;
+}
 main .Contact-Me ol{
   position: relative;
   top: 50px;

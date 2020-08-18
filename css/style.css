@@ -2874,6 +2874,11 @@ main .project1 .my-flex-container .a{
 #first-card p{
   text-align: center;
 }
+
+#first-card .firstline{
+  position: relative;
+  left: -2px;
+}
 #third-card .card--hover ul{
   left: -60px;
 }
@@ -2910,6 +2915,11 @@ text-align: left
 #first-card, #second-card, #third-card{
   min-width: 270px;
 }
+
+
+
+
+
 
 #fourth-card{
   position: relative;
@@ -3310,11 +3320,12 @@ main .Contact-Me{
 main .Contact-Me ol{
   position: relative;
   top: 50px;
+  left: -14px;
 }
 
 main .Contact-Me #footer_last{
   position: relative;
-  left: 130px;
+  left: 107px;
   top: 100px;
 }
 
@@ -3325,8 +3336,18 @@ main .articles__footer{
 
 main .Contact-Me #L-p, main .Contact-Me #Mail-p{
   position: relative;
-  left: -5px;
+  left: 9px;
 }
+
+main .Contact-Me #Mail-p{
+  position: relative;
+  left: 10px;
+}
+
+main .Contact-Me .footer{
+  position: relative;
+}
+
 }
 /* iphone XR, 11 */
 @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) {

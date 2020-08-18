@@ -1658,7 +1658,7 @@ main .project2 .letter.in {
     text-decoration: underline;
     text-decoration-color: white;
     top: 150px;
-    left: 150px;
+    left: 11%;
     font-size: 150px;
   }
   
@@ -1667,7 +1667,11 @@ main .project2 .letter.in {
     background-image: url('https://www.apple.com/v/iphone-xr/a/images/overview/copy_texture_4_large.jpg');
   }
 
-
+@media(min-width:1290px) and (max-width:1310px){
+  .masked-copy p{
+    left: 65px;
+  }
+}
 
 
 main .project3 .explanation{
@@ -1714,7 +1718,8 @@ main .project3 .explanation{
 .container{
   width: 1000px;
   position: relative;
-  left: 250px;
+  left: 16%;
+  right: 50%;
   top: 720px;
   display: flex;
   justify-content: space-between;

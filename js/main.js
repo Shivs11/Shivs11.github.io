@@ -3,14 +3,19 @@
 
 $(document).ready(function(){
 
+    $anchors = $('.anchor')
     $nav = $('.nav');
-    console.log($nav)
     $toggleCollapse = $('.toggle-collapse');
 
     /* click event on toggle menu */
 
     $toggleCollapse.click(function(){
         $nav.toggleClass('collapse')
+    })
+
+    /* Collapsing the navbar */
+    $anchors.click(function(){
+      $nav.toggleClass('collapse')
     })
 
 });

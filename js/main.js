@@ -218,7 +218,8 @@ if(screen.width < 500){
     }
     else{
       $('.animated-title').fadeOut();
-    }})}
+    }
+})}
 
 
 

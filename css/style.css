@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&family=Ubuntu:ital,wght@1,500&display=swap');
 
 html,body{
     margin: 0%;
@@ -1659,15 +1659,17 @@ main .project2 .letter.in {
     position: relative;
     text-decoration: underline;
     text-decoration-color: white;
+    color: #FFA500;
     top: 150px;
     left: 11%;
     font-size: 150px;
   }
   
-  .texture-orange {
+  /* .texture-orange {
     color: #e5895f;
     background-image: url('https://www.apple.com/v/iphone-xr/a/images/overview/copy_texture_4_large.jpg');
-  }
+  } */
+
 
 @media(min-width:1290px) and (max-width:1310px){
   .masked-copy p{
@@ -1761,7 +1763,7 @@ main .project3 .explanation{
 }
 
 .container .card .face.face1 .content{
-  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  
   opacity: 0.2;
   transition: 0.5s;
 }
@@ -1793,7 +1795,7 @@ main .project3 .explanation{
 
 
 .container .card .face.face1 .content h3{
-  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: 'Overpass', sans-serif;
   font-weight: 600;
   margin: 10px 0 0;
   padding: 0;
@@ -1820,7 +1822,7 @@ main .project3 .explanation{
 
 
 .container .card .face.face2 .content ul{
-  font-family: 'Kavivanar', cursive;
+  font-family: 'Overpass', sans-serif;
   list-style-position: inside;
   position: relative;
   padding-right: 12px;
@@ -1839,6 +1841,9 @@ main .project3 .explanation{
 .container .card .face.face2 .content li{
   font-size: 20px;
 }
+
+
+
 
 .container .card .face.face2 .content a{
   margin: 15px 0 0;
@@ -2986,6 +2991,7 @@ main .project3{
   background: black;
   overflow: hidden;
 }
+
 .big-type { 
   /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
   font-size: 60px;
@@ -2994,6 +3000,7 @@ main .project3{
   font-weight: 600; /* Nice, chunky, bold! */
   font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+
 
 .masked-copy { 
   /* This is it! Magic: */

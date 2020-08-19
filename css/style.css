@@ -2799,7 +2799,556 @@ main .tryouts{
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { }
 
 /* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { }
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+  @viewport{
+    viewport-fit: cover;
+  }
+  body { padding: env(safe-area-inset, 0px); }
+
+
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+
+/* What I have been working on- section */
+
+.working-on h2{
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+  left: -29px;
+}
+
+
+/* Reducing the size of the section*/
+
+.project1{
+  top: -120px;
+  height: 590vh;
+}
+
+.project1 #project-title{
+  font-size: 60px;
+
+}
+
+
+.project-description #project-title2{
+  font-size: 65px;
+  position: relative;
+  top: -20px;
+
+  text-align: center;
+}
+
+.project-description .card{
+  display: none;
+}
+
+main .project1{
+  border-radius: 40px;
+}
+
+main .project1 .my-flex-container .a{
+  border-radius: 40px;
+}
+
+/* Puttin gall the cards on the left */
+
+.my-flex-container{
+  position: relative;
+  left: -40px;
+  top: -300px;
+}
+
+/*Trying to remove the hovering effects completely */
+
+
+/* First card on project1 */
+main .my-flex-container #first-card{
+  width: 70em;
+  position: relative;
+}
+
+/* Project1 cards */
+
+.my-flex-container .card a{
+  height: 340px;
+}
+
+/* Personalisation to each card to make it look perfect */
+
+#first-card #heading-chattime{
+  position: relative;
+  left: -18px;
+}
+
+#first-card p{
+  text-align: center;
+}
+#third-card .card--hover ul{
+  left: -60px;
+}
+
+#fourth-card a, #fifth-card a{
+  width: 17em;
+  height: 30em;
+  position: relative;
+  left: -67px;
+}
+
+#fourth-card .tool1, #fifth-card .tool2{
+  display: none;
+}
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+  position: relative;
+  left: 22px;
+
+}
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
+
+#fourth-card li, #fifth-card li{
+text-align: left
+}
+
+#fifth-card a{
+  bottom: 20px;
+}
+
+
+/* Project 2 */
+
+.project2{
+  height: 150vh;
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  display: none;
+  position: relative;
+  left: 320px;
+  top: 250px;
+  transform: translate(-50%, -50%);
+  width: 120vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 200em;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+ 
+  transform: translate(0, -100%);
+}
+
+/* Changing Built with as well */
+
+main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 45px;
+  position: relative;
+  width: 230px;
+  left: 20px;
+  height: 40px;
+  top: 22%;
+  margin-top: -200px;
+}
+
+
+/* Project 3 */
+main .project3{
+  min-height: 380vh;
+  background: black;
+  overflow: hidden;
+}
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+  font-size: 64px;
+  height: 60vh;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  font-weight: 600; /* Nice, chunky, bold! */
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.masked-copy { 
+  /* This is it! Magic: */
+  -webkit-background-clip: text;
+  color: transparent !important;
+  
+}
+
+.project3 p{
+  position: relative;
+  top: -10px;
+  top: 50px;
+  left: -6px;
+  font-size: 125px;
+  color: #FFA177FF;
+}
+
+.firstline{
+  position: relative;
+  left: 13px;
+}
+
+.project3 .secondline{
+  position: relative;
+  left: 120px;
+
+}
+
+.project3 .thirdline{
+  position: relative;
+  left: 32px;
+}
+
+.project3 .container{
+  top: 1000px;
+  left: 50px;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.project3 .goo{
+  position: relative;
+  top: -160px;
+  left: -20px;
+}
+.project3 .explanation .goo #newline::before{
+  content: '\a';
+  white-space: pre;
+}
+
+.container .card .face.face1
+{
+  position: relative;
+  background: #ff0057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.container .card .face.face1 .content{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  transition: 0.5s;
+  
+}
+
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+#firstone{
+  position: relative;
+  left: 40px;
+}
+
+
+
+#secondlist{
+  position: relative;
+  top: 14px;
+}
+
+#thirdlist{
+  position: relative;
+  top: 14px;
+}
+
+
+.container .card .face.face1 .content h3{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container .card .face.face2 .content ul{
+  font-family: 'Cherry Swash', cursive;
+  list-style-position: inside;
+  position: relative;
+  padding-right: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-indent: 0%;
+  padding: 0;
+}
+
+.container .card .face.face2 .content{
+  position: relative;
+  left: 15px;
+  top: -10px;
+  
+}
+
+.container .card .face.face2 .content li{
+  font-size: 20px;
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card{
+  pointer-events: none;
+  margin-bottom: 85px;
+}
+
+.container .card .face.face2{
+  height: 270px;
+}
+
+
+
+/* Section - Meet The Team */
+.meettheteam p{
+  font-size: 75px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  left: -40px;
+}
+
+
+main .project3-changebg{
+  height: 430px;
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
+  width: 900px;
+  background-size: 600px;
+  position: relative;
+  left: 440px;
+}
+
+
+.project3 .container .face.face2 li{
+  position: relative;
+  left: -20px;
+}
+
+
+/* Work-Experience Section */
+
+main .project4{
+  height: 1150px;
+}
+
+.project4 .title h1{
+  font-size: 60px;
+  position: relative;
+  top: -80px;
+  
+}
+
+main .project4 .inner{
+  width: 500px;
+}
+
+main .project4 #Novantas{
+  position: relative;
+  left: 75px;
+  height: 157px;
+  margin-left: -20px;
+  top: -200px;
+
+}
+
+main .project4 img{
+  position: relative;
+  left: 5px;
+  top: 7px;
+  
+  height: 120px;
+  width: 120px;
+}
+main .project4 b{
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  left: -50px;
+  margin: 0px;
+}
+
+main .project4 #company{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  top: 9px;
+  left: -53px;
+}
+main .project4 #description{
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  position: relative;
+  left: 22px;
+  top: 6px;
+}
+
+
+
+main .project4 .right{
+  position: relative;
+  left: -195px;
+  top: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: -225px;
+  top: 65px;
+}
+
+
+main .project4 #Novantas{
+  border: 1px;
+  border-style: groove;
+  border-radius: 17px;
+  border-width: thick;
+}
+
+
+/* Resume section */
+
+main .resume{
+  height: 1200px;
+}
+main .resume .code{
+  left: -30px;
+}
+
+main .resume .console{
+  height: 700px;
+  border-bottom: 15px solid #ccc;
+  
+}
+
+main .resume .breaknow{
+  position: relative;
+}
+
+main .resume .breaknow::before{
+  content: '\a';
+  white-space: pre;
+}
+
+main .resume .breaknow{
+  position: relative;
+  left: 30px;
+}
+
+/* Last Section -> Let's get in touch */
+
+main .Contact-Me ol{
+  position: relative;
+  top: 50px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 130px;
+  top: 130px;
+}
+
+
+main .articles__footer{
+  width: 900px;
+}
+
+main .Contact-Me #L-p, main .Contact-Me #Mail-p{
+  position: relative;
+  left: -5px;
+}
+}
 
 /* iphone 6+, 6s+, 7+, 8+ */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {

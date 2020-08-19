@@ -255,7 +255,6 @@ main .site-title h1{
      padding-left: 100px;
      justify-content: center;
      align-items: center;
-     font-family: 'Righteous', cursive;
      text-decoration: underline;
      display: none;
  }
@@ -3293,13 +3292,13 @@ main .project4 #company{
   font-style: italic;
   position: relative;
   top: 9px;
-  left: -75px;
+  left: -140px;
 }
 main .project4 #description{
   font-family: 'Rubik', sans-serif;
   font-style: italic;
   position: relative;
-  left: 2px;
+  left: -99px;
   top: 6px;
 }
 
@@ -3307,13 +3306,13 @@ main .project4 #description{
 
 main .project4 .right{
   position: relative;
-  left: -217px;
+  left: -270px;
   top: 72px;
 }
 
 main .project4 .right-2{
   position: relative;
-  left: -248px;
+  left: -300px;
   top: 65px;
 }
 
@@ -3323,6 +3322,11 @@ main .project4 #Novantas{
   border-style: groove;
   border-radius: 17px;
   border-width: thick;
+}
+
+main .project4 .inner{
+  position: relative;
+  left: 26%;
 }
 
 

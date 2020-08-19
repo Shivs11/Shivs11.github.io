@@ -234,6 +234,7 @@ if(screen.width < 500){
 
 
 
+
   var words = document.getElementsByClassName('word');
   var wordArray = [];
   var currentWord = 0;

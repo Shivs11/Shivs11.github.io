@@ -126,7 +126,6 @@ var parent2 = document.getElementsByClassName('project1')
 
 body.onscroll = function(){
     console.log(document.documentElement.scrollTop)
-    console.log("HEY")
     //console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
 
 
@@ -216,8 +215,10 @@ if(screen.width > 500){
 if(screen.width < 500){
 
   window.addEventListener("scroll", function() {
-    var elementTarget = document.getElementById("fifth-card");
-    if (window.scrollY >= (elementTarget.offsetTop)) {
+    var elementTarget = document.getElementById("project1");
+    // console.log(elementTarget.offsetTop)
+    // console.log('this')
+    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight - 500)) {
       //var y = $(this).scrollTop();
       //if (y > 2600) {
       $('.animated-title').fadeIn();

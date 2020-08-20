@@ -2860,7 +2860,6 @@ main .tryouts{
   font-size: 65px;
   position: relative;
   top: -20px;
-
   text-align: center;
 }
 
@@ -2899,6 +2898,11 @@ main .my-flex-container #first-card{
   height: 340px;
 }
 
+
+main .project1 h4{
+  position: relative;
+  left: -5px;
+}
 /* Personalisation to each card to make it look perfect */
 
 #first-card #heading-chattime{
@@ -2917,7 +2921,7 @@ main .my-flex-container #first-card{
   width: 17em;
   height: 30em;
   position: relative;
-  left: -67px;
+  left: -87px;
 }
 
 #fourth-card .tool1, #fifth-card .tool2{
@@ -2938,18 +2942,64 @@ main .my-flex-container #first-card{
 }
 
 #fourth-card li, #fifth-card li{
-text-align: left
+text-align: left;
+
 }
 
 #fifth-card a{
   bottom: 20px;
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  margin: -4px;
 }
+
+#fourth-card a{
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  margin: -4px;
+}
+
+#second-card a,#third-card a{
+  width: 240px;
+  margin: -10px;
+  position: relative;
+  left: -42px;
+  
+}
+
+#first-card a{
+  position: relative;
+  left: -60px;
+}
+
+#second-card a{
+  width: 250px;
+  left: -52px;
+}
+
+
+
+main .project1{
+  width: 500px;
+}
+
+
+
+#third-card ul > p{
+  width: 260px;
+
+}
+
 
 
 /* Project 2 */
 
 .project2{
-  height: 150vh;
+  height: 210vh;
 }
 
 .animated-title {
@@ -2958,8 +3008,8 @@ text-align: left
   height: 90vmin;
   display: none;
   position: relative;
-  left: 320px;
-  top: 250px;
+  left: 280px;
+  top: 200px;
   transform: translate(-50%, -50%);
   width: 120vmin;
 }
@@ -3008,19 +3058,19 @@ text-align: left
 
 main .project2 .text{
   font: 400 15px 'Open Sans', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   position: relative;
   width: 230px;
   left: 20px;
   height: 40px;
-  top: 22%;
+  top: 24%;
   margin-top: -200px;
 }
 
 
 /* Project 3 */
 main .project3{
-  min-height: 380vh;
+  min-height: 550vh;
   background: black;
   overflow: hidden;
 }
@@ -3045,7 +3095,7 @@ main .project3{
   top: -10px;
   top: 50px;
   left: -6px;
-  font-size: 125px;
+  font-size: 115px;
   color: #FFA177FF;
 }
 
@@ -3066,8 +3116,8 @@ main .project3{
 }
 
 .project3 .container{
-  top: 1000px;
-  left: 50px;
+  top: 1250px;
+  left: 35px;
   display: flexbox;
   flex-direction: column;
   justify-content: space-evenly;
@@ -3077,8 +3127,8 @@ main .project3{
 
 .project3 .goo{
   position: relative;
-  top: -160px;
-  left: -20px;
+  top: -180px;
+  left: -38px;
 }
 .project3 .explanation .goo #newline::before{
   content: '\a';
@@ -3192,11 +3242,11 @@ main .project3{
 
 /* Section - Meet The Team */
 .meettheteam p{
-  font-size: 75px;
+  font-size: 73px;
   width: 350px;
   text-align: left;
   position: relative;
-  left: -40px;
+  left: -65px;
 }
 
 
@@ -3219,11 +3269,11 @@ main .project3-changebg{
 /* Work-Experience Section */
 
 main .project4{
-  height: 1150px;
+  height: 1050px;
 }
 
 .project4 .title h1{
-  font-size: 60px;
+  font-size: 53px;
   position: relative;
   top: -80px;
   
@@ -3231,11 +3281,12 @@ main .project4{
 
 main .project4 .inner{
   width: 500px;
+
 }
 
 main .project4 #Novantas{
   position: relative;
-  left: 75px;
+  left: 87px;
   height: 157px;
   margin-left: -20px;
   top: -200px;
@@ -3245,10 +3296,10 @@ main .project4 #Novantas{
 main .project4 img{
   position: relative;
   left: 5px;
-  top: 7px;
+  top: 20px;
   
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
 }
 main .project4 b{
   font-weight: 600;
@@ -3264,13 +3315,13 @@ main .project4 #company{
   font-style: italic;
   position: relative;
   top: 9px;
-  left: -53px;
+  left: -68px;
 }
 main .project4 #description{
   font-family: 'Rubik', sans-serif;
   font-style: italic;
   position: relative;
-  left: 22px;
+  left: 7px;
   top: 6px;
 }
 
@@ -3278,13 +3329,13 @@ main .project4 #description{
 
 main .project4 .right{
   position: relative;
-  left: -195px;
+  left: -210px;
   top: 72px;
 }
 
 main .project4 .right-2{
   position: relative;
-  left: -225px;
+  left: -239px;
   top: 65px;
 }
 
@@ -3295,6 +3346,9 @@ main .project4 #Novantas{
   border-radius: 17px;
   border-width: thick;
 }
+
+
+
 
 
 /* Resume section */
@@ -3331,6 +3385,7 @@ main .resume .breaknow{
 main .Contact-Me ol{
   position: relative;
   top: 50px;
+  left: -10px;
 }
 
 main .Contact-Me #footer_last{
@@ -3339,14 +3394,24 @@ main .Contact-Me #footer_last{
   top: 130px;
 }
 
+main .Contact-Me{
+  height: 200vh;
+}
 
 main .articles__footer{
   width: 900px;
 }
 
-main .Contact-Me #L-p, main .Contact-Me #Mail-p{
+
+
+main .Contact-Me #Mail-p{
   position: relative;
-  left: -5px;
+  left: 14px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 110px;
 }
 }
 

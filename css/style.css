@@ -3587,10 +3587,10 @@ main .project1 .my-flex-container .a{
 }
 
 #fourth-card a, #fifth-card a{
-  width: 14em;
-  height: 35em;
+  width: 17em;
+  height: 30em;
   position: relative;
-  left: -67px;
+  left: -87px;
 }
 
 #fourth-card .tool1, #fifth-card .tool2{
@@ -3605,35 +3605,69 @@ main .project1 .my-flex-container .a{
   left: 22px;
 
 }
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
 
 #fourth-card li, #fifth-card li{
-text-align: left
+text-align: left;
+
 }
 
 #fifth-card a{
-  bottom: 60px;
-}
-
-
-#first-card, #second-card, #third-card{
-  min-width: 270px;
-}
-
-
-
-
-
-
-#fourth-card{
+  bottom: 20px;
+  width: 255px;
+  padding-left: 1px;
   position: relative;
-  bottom: 90px;
+  left: -55px;
+  top: -83px;
 }
 
+#fourth-card a{
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  margin: -4px;
+  top: -102px;
+}
+
+#second-card a,#third-card a{
+  width: 240px;
+  margin: -10px;
+  position: relative;
+  left: -42px;
+  
+}
+
+#first-card a{
+  position: relative;
+  left: -60px;
+}
+
+#second-card a{
+  width: 250px;
+  left: -52px;
+}
+
+
+
+main .project1{
+  width: 500px;
+}
+
+
+
+#third-card ul > p{
+  width: 260px;
+
+}
 
 /* Project 2 */
 
 .project2{
-  height: 150vh;
+  height: 210vh;
 }
 
 .animated-title {
@@ -3642,8 +3676,8 @@ text-align: left
   height: 90vmin;
   display: none;
   position: relative;
-  left: 300px;
-  top: 220px;
+  left: 280px;
+  top: 200px;
   transform: translate(-50%, -50%);
   width: 120vmin;
 }
@@ -3690,33 +3724,43 @@ text-align: left
 
 /* Changing Built with as well */
 
-main .project2 .text{
-  font: 500 10px 'Open Sans', sans-serif;
-  font-size: 40px;
+/* main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 35px;
   position: relative;
   width: 230px;
-  left: 20px;
+  left: 10px;
   height: 40px;
-  top: 25%;
+  top: 24%;
   margin-top: -200px;
+} */
+
+
+main .project2 .text p{
+  position: relative;
+  left: -8px;
 }
+
 
 /* Project 3 */
 main .project3{
-  min-height: 450vh;
+  min-height: 650vh;
   background: black;
   overflow: hidden;
 }
 
+main .project3{
+  height: 500vh;
+}
+
 .big-type { 
   /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
-  font-size: 60px;
+  font-size: 64px;
   height: 60vh;
   line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
   font-weight: 600; /* Nice, chunky, bold! */
   font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
 }
-
 
 .masked-copy { 
   /* This is it! Magic: */
@@ -3729,8 +3773,8 @@ main .project3{
   position: relative;
   top: -10px;
   top: 50px;
-  left: -15px;
-  font-size: 120px;
+  left: -10px;
+  font-size: 115px;
   color: #FFA177FF;
 }
 
@@ -3751,8 +3795,8 @@ main .project3{
 }
 
 .project3 .container{
-  top: 1300px;
-  left: 30px;
+  top: 1250px;
+  left: 35px;
   display: flexbox;
   flex-direction: column;
   justify-content: space-evenly;
@@ -3762,8 +3806,8 @@ main .project3{
 
 .project3 .goo{
   position: relative;
-  top: -160px;
-  left: -30px;
+  top: -180px;
+  left: -38px;
 }
 .project3 .explanation .goo #newline::before{
   content: '\a';
@@ -3877,11 +3921,11 @@ main .project3{
 
 /* Section - Meet The Team */
 .meettheteam p{
-  font-size: 75px;
+  font-size: 73px;
   width: 350px;
   text-align: left;
   position: relative;
-  left: -64px;
+  left: -65px;
 }
 
 
@@ -3900,10 +3944,11 @@ main .project3-changebg{
   left: -20px;
 }
 
+
 /* Work-Experience Section */
 
 main .project4{
-  height: 1150px;
+  height: 1050px;
 }
 
 .project4 .title h1{
@@ -3913,11 +3958,14 @@ main .project4{
   
 }
 
+main .project4 .inner{
+  width: 500px;
 
+}
 
 main .project4 #Novantas{
   position: relative;
-  left: 88px;
+  left: 87px;
   height: 157px;
   margin-left: -20px;
   top: -200px;
@@ -3927,10 +3975,10 @@ main .project4 #Novantas{
 main .project4 img{
   position: relative;
   left: 5px;
-  top: 25px;
+  top: 20px;
   
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
 }
 main .project4 b{
   font-weight: 600;
@@ -3946,13 +3994,13 @@ main .project4 #company{
   font-style: italic;
   position: relative;
   top: 9px;
-  left: -162px;
+  left: -68px;
 }
 main .project4 #description{
   font-family: 'Rubik', sans-serif;
   font-style: italic;
   position: relative;
-  left: -85px;
+  left: 7px;
   top: 6px;
 }
 
@@ -3960,13 +4008,13 @@ main .project4 #description{
 
 main .project4 .right{
   position: relative;
-  left: -302px;
+  left: -210px;
   top: 72px;
 }
 
 main .project4 .right-2{
   position: relative;
-  left: -332px;
+  left: -239px;
   top: 65px;
 }
 
@@ -3976,11 +4024,6 @@ main .project4 #Novantas{
   border-style: groove;
   border-radius: 17px;
   border-width: thick;
-}
-
-main .project4 .inner{
-  position: relative;
-  left: 26%;
 }
 
 

@@ -93,7 +93,7 @@ typewriter.prototype.type = function(){
     }
     setTimeout(() => {
         this.type()
-    }, 110);
+    }, 180);
 }
 
 // Init on DOM Loading.

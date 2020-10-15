@@ -1,0 +1,5210 @@
+@import url('../css/font.css')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kavivanar&family=Rancho&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&family=Ubuntu:ital,wght@1,500&display=swap');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+
+:root{
+
+    /* Theme colors */
+
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color */
+
+    --sky: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+
+    /* theme font-family */
+    --Al: 'Almarai', cursive;
+    --Damion: 'Damion', cursive;
+    --Grenze: 'Grenze_Gotisch', cursive;
+    --Sofia: 'Sofia', cursive;
+
+}
+/* Global Classes */
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Navbar styling */
+
+
+.nav{
+    background: black;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    position: relative;
+    left: 22px;
+
+}
+
+
+.nav .nav-menu{
+    justify-content: space-between;
+    position: relative;
+    left: -50px;
+
+}
+
+
+.collapse{
+    height: 30rem;
+
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+
+}
+
+
+.nav .nav-items .nav-link {
+    padding: 1.5rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    left: -50px;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link a{
+  color: white;
+}
+
+
+.nav .nav-items .nav-link:hover{
+    background-color: black;
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+.nav .social i{
+    padding: 0.2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2rem 0;
+}
+
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+
+
+/* Navbar styling */
+
+
+
+/* Main Content */
+
+ /* Site Title */
+
+
+
+
+ .site-title {
+   background: 
+     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 320" preserveAspectRatio="xMidYMid meet"><path fill="white"  d="M0,224L120,240C240,256,480,288,720,266.7C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>') bottom/100% auto,
+     url('../assets/Wallpaper-2.jpg') center/cover;
+   background-repeat:no-repeat;
+   height: 120vh;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .site-title .site-background {
+   padding-top: 10rem;
+   text-align: center;
+   color: white;
+   padding-top: 24px;
+ }
+
+ #svg-main{
+   display: none;
+ }
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+    padding-top: 24px;
+}
+
+main h1{
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 1px;
+    font-style: italic;
+    font-size: 50px;
+}
+
+main h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    padding-top: 50px;
+    font-size: 30px;
+
+}
+
+main .site-title h1{
+  padding-top: 20px;
+}
+
+
+ /* Site Title */
+
+
+ /* Working-on? creation */
+
+
+ /* Parent div for scroll effect */
+
+ main .space{     
+    position: relative;
+ }
+
+ /* Parent div for scroll effect */
+
+ main .working-on{
+     background: white;
+
+     height: 50vh;
+
+ }
+
+ main .working-on h2{
+     color: black;
+     padding-left: 100px;
+     justify-content: center;
+     align-items: center;
+     text-decoration: underline;
+     display: none;
+ }
+
+ @media(min-width:1000px){
+   main .working-on h2{
+     position: relative;
+     text-align: center;
+     left: -5%;
+     
+   }
+ }
+
+ /* Fading effect for working-on heading */
+ main .working-on .fadingEffect{
+     position: absolute;
+     top: 0; bottom: 0; right: 0;
+     width: 10%;
+     -moz-animation: showHide 5s ease-in alternate infinite; /* Firefox */
+     -webkit-animation: showHide 5s ease-in alternate infinite; /* Safari and Chrome */
+     -ms-animation: showHide 5s ease-in alternate infinite; /* IE10 */
+     -o-animation: showHide 5s ease-in alternate infinite; /* Opera */
+     animation: showHide 5s ease-in alternate infinite
+ }
+
+ @-moz-keyframes showHide { /* FF */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+
+ /* Projects creation */
+
+ 
+
+main .project1{
+    min-height: 2000px;
+    background: black;
+    border-radius: 1.2%;
+    border: 1px solid;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+main .project1 h4{
+    padding-top: 12px;
+    padding-left: 12px;
+    color: white;
+    font-family: 'Recursive', sans-serif;
+    font-size: 120px;
+    font-style: italic;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+main .project1 #project-title2{
+    color: black;
+    height: 20vh;
+    position: relative;
+    top: -40px;
+    font-family: 'Rubik', sans-serif !important;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-align: center;
+
+}
+
+
+/* Project1 description commences. */
+
+
+.my-flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: .5em;
+  min-height: 700px;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.my-flex-container .card {
+  margin: 120px;
+  font-weight: bold;
+  position: relative;
+  width: 100px;
+  height: 50vh;
+  flex: 1 1 auto;
+
+}
+.my-flex-container .card a {
+  padding: 30px;
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+@media(max-width:1000px){
+  .my-flex-container .card{
+    pointer-events: none;
+  }
+
+  .my-flex-container .card--display{
+    display: none;
+  }
+
+  #first-card .card--hover, #second-card .card--hover, #third-card .card--hover, #fourth-card .card--hover, #fifth-card .card--hover{
+    display: inline;
+  }
+
+
+}
+
+@media(min-width:800px){
+  .my-flex-container .card a{
+    transition: 0.25s ease;
+  }
+
+
+
+  .my-flex-container .card a:hover, .my-flex-container .card a:active {
+    transform: translate(-30px, -30px);
+  }
+
+}
+
+
+
+
+
+.my-flex-container .card a:hover .card--display, .my-flex-container .card a:active .card--display{
+  display: none;
+}
+.my-flex-container .card a:hover .card--hover, .my-flex-container .card a:active .card--hover{
+  display: block;
+}
+.my-flex-container .card a .card--display i {
+  font-size: 60px;
+  margin-top: 200px;
+}
+.my-flex-container .card a .card--display h2 {
+  margin: 20px 0 0;
+}
+.my-flex-container .card a .card--hover {
+  display: none;
+}
+.my-flex-container .card a .card--hover h2 {
+  margin: 20px 0;
+}
+.my-flex-container .card a .card--hover p {
+  font-weight: normal;
+  line-height: 1.5;
+}
+.my-flex-container .card a .card--hover p.link {
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #5bc0eb;
+}
+
+.my-flex-container .card.card--dark a {
+  color: white;
+  background-color: black;
+  border-color: #fde74c;
+  border-width: thick;
+}
+.my-flex-container .card.card--dark a .card--hover .link {
+  color: #fde74c;
+}
+
+#first-card, #second-card, #third-card{
+  width: 250px;
+}
+
+
+#second-card .card--hover ul{
+  display: inline-flexbox;
+  position: relative;
+  padding-top: 2.5px;
+  width: 285px;
+  left: -54px;
+  
+}
+#third-card .card--hover ul{
+  display: inline-flexbox;
+  position: relative;
+  align-items: center;
+  left: -54px;
+  width: 290px;
+  top: -20px;
+}
+#third-card .card--hover p{
+  margin: 0 0 5px 0;
+}
+
+#first-card p{
+  text-align: justify;
+  padding-top: 10%;
+
+}
+
+#first-card b{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#second-card b{
+  font-weight: 600;
+  text-decoration: underline;
+}
+#second-card .card--hover li{
+  text-align: justify;
+  padding-top: -0.6px;
+  margin: 0 0 60px 0;
+
+}
+
+
+
+#third-card p{
+  text-align: justify;
+  padding-top: 10%;
+}
+
+#third-card b{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#first-card #no-hover, #first-card #hover, #second-card #no-hover, #second-card #hover, #third-card #no-hover, #third-card #hover{
+  color: black;
+  text-align: center;
+  top: 50%;
+  bottom: 50%;
+}
+
+#first-card #hover, #second-card #hover, #third-card #hover{
+  text-decoration: 4px underline;
+
+}
+
+#first-card a, #second-card a, #third-card a{
+  border-style: groove;
+  border-color: black;
+  border-width: thick;
+  border: double;
+  border-width: 12px;
+  font-family: 'Recursive', sans-serif;
+  font-weight: 500;
+}
+
+#first-card #heading-chattime{
+  padding-left: 2.5em;
+}
+
+#fourth-card i, #fifth-card i, #fourth-card #tools, #fifth-card #tools{
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+}
+
+
+#fourth-card .tool1, #fifth-card .tool2{
+  text-align: center;
+}
+
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: none;
+}
+
+#fourth-card ul, #fifth-card ul{
+  padding-top: 4px;
+  list-style: none;
+}
+
+#fourth-card li, #fifth-card li{
+  margin: 0 0 40px 0;
+  font-family: 'Recursive', sans-serif;
+  text-align: justify;
+}
+
+
+
+#fourth-card ul li::before, #fifth-card ul li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: white; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  min-width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; 
+}
+
+@media(min-width:900px) and (max-width:1500px){
+  .my-flex-container{
+    align-items: center;
+    justify-content: center;
+  }
+  #fourth-card, #fifth-card{
+    min-width: 470px;
+    max-width: 500px;
+  }
+
+  #first-card, #second-card, #third-card{
+    min-width: 270px;
+    max-width: 270px;
+  }
+  #first-card{
+    position: relative;
+    right: 8%;
+  }
+}
+
+
+
+
+main .project1 .explanation #first-line{
+    color: black;
+    margin: 0;
+    white-space: pre;
+    font-size: 18px;
+    flex-direction: initial;
+    font-weight: 600;
+    line-break: 0.67;
+    position: relative;
+    padding-left: 25px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+main .project1 .explanation #second-line{
+    padding-left: 7.2px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+main .project1 .explanation #third-line{
+    padding-left: 76px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    height: 13vh;
+}
+
+
+/*
+.loginBtn {
+    background: black repeat-x;
+    width:175px;
+    height:65px;
+    margin:20px auto;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
+    text-align: center;
+    line-height: 65px;
+    color: white;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 600;
+}
+
+.loginBtn a{
+    color: white;
+}
+*/
+
+main .project1 .explanation p{
+    margin: 3.2px;
+}
+
+
+/* Project 2 */
+.project2{
+    height: 250vh;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* Only for big screens */
+@media(min-width: 800px){
+  .animated-title {
+    color: #222;
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    display: none;
+    position: relative;
+    left: 700px;
+    top: 350px;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #000;
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: #767676;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }
+}
+
+
+
+
+
+
+
+
+form.chat *{
+    transition:all .5s;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+  }
+  
+  form.chat {
+    margin:0;
+    cursor:default;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;   
+  }
+  
+  form.chat span.spinner{
+    -moz-animation: loading-bar 2s 1;
+    -webkit-animation: loading-bar 2s 1;
+    animation: loading-bar 2s 1;
+    display: block;
+    height: 2px;
+    background-color: #00e34d;
+    transition: width 0.2s;
+    position:absolute;
+    top:0; left:0; right:0;
+    z-index:4
+  }
+  
+  form.chat .messages{
+    display:block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position:relative;
+    height:90%;
+    width:100%;
+    padding:2% 3%;
+    border-bottom:1px solid #ecf0f1;
+  }
+  
+  form.chat ::-webkit-scrollbar {width: 3px; height:1px;transition:all .5s;z-index:10;}
+  form.chat ::-webkit-scrollbar-track {background-color: white;}
+  form.chat ::-webkit-scrollbar-thumb {
+    background-color: #bec4c8; 
+    border-radius:3px;
+  }
+  
+  form.chat .message{
+    display:block;
+    width:98%;
+    padding:0.5%;
+  }
+  
+  form.chat .message p{
+    margin:0;
+  }
+  
+  form.chat .myMessage,
+  form.chat .fromThem {
+    max-width: 50%;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+  }
+  
+  form.chat .message:hover .myMessage{
+    -webkit-transform: translateX(-130px);
+    transform: translateX(-130px);
+  }
+  
+  form.chat .message:hover .fromThem{
+    -webkit-transform: translateX(130px);
+    transform: translateX(130px);
+  }
+  
+  form.chat .message:hover date {
+    opacity: 1;
+  }
+  
+  form.chat .myMessage,.fromThem{
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    clear: both;
+    font: 400 15px 'Open Sans', sans-serif;
+  }
+  
+  form.chat .myMessage {
+    background: #00e34d;
+    color:white;
+    float:right;
+    clear:both;
+    border-bottom-right-radius: 20px 0px\9;
+  }
+  
+  form.chat .myMessage:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -2px;
+    right: -8px;
+    height: 19px;
+    border-right: 20px solid #00e34d;
+    border-bottom-left-radius: 16px 14px;
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+    border-bottom-left-radius: 15px 0px\9;
+    transform: translate(-1px, -2px)\9;
+  }
+  
+  form.chat .myMessage:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -2px;
+    right: -42px;
+    width: 12px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+    -webkit-transform: translate(-30px, -2px);
+    transform: translate(-30px, -2px);
+  }
+  
+  form.chat .fromThem {
+    background: #E5E5EA;
+    color: black;
+    float: left;
+    clear:both;
+    border-bottom-left-radius: 30px 0px\9;
+  }
+  form.chat .fromThem:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -2px;
+    left: -7px;
+    height: 19px;
+    border-left: 20px solid #E5E5EA;
+    border-bottom-right-radius: 16px 14px;
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+    border-bottom-right-radius: 15px 0px\9;
+    transform: translate(-1px, -2px)\9;
+  }
+  
+  form.chat .fromThem:after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    bottom: -2px;
+    left: 4px;
+    width: 26px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+    -webkit-transform: translate(-30px, -2px);
+    transform: translate(-30px, -2px);
+  }
+  
+  form.chat date {
+    position:absolute;
+    top: 10px;
+    font-size:14px;
+    white-space:nowrap;
+    vertical-align:middle;
+    color: #8b8b90;
+    opacity: 0;
+    z-index:4;
+  }
+  
+  form.chat .myMessage date {
+    left: 105%;
+  }
+  
+  form.chat .fromThem date {
+    right: 105%;
+  }
+  
+  form.chat input{
+    font: 400 13px 'Open Sans', sans-serif;
+    border:0;
+    padding:0 15px;
+    height:10%;
+    outline:0;
+  }
+  
+  form.chat input[type='text']{
+    width:73%;
+    float:left;
+    font: 400 13px 'Open Sans', sans-serif;
+  }
+  
+  form.chat input[type='submit']{
+    width:23%;
+    background:transparent;
+    color:#00E34D;
+    font-weight:700;
+    text-align:right;
+    float:right;
+    font: 400 13px 'Open Sans', sans-serif;
+  }
+  
+    form.chat .myMessage,form.chat .fromThem{
+      font-size:12px;
+    }
+    
+    form.chat .message:hover .myMessage{
+      transform: translateY(18px);
+      -webkit-transform: translateY(18px);
+    }
+  
+    form.chat .message:hover .fromThem{
+      transform: translateY(18px);
+      -webkit-transform: translateY(18px);
+    }
+    
+    form.chat .myMessage date,form.chat .fromThem date {
+      top: -20px;
+      left:auto;
+      right:0;
+      font-size:12px;
+    }
+    
+    form.chat .myMessage,
+    form.chat .fromThem {
+      max-width: 90%;
+    }
+    
+  @-moz-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @-webkit-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* DEMO */
+  .iphone{
+    width:300px;
+    height:609px;
+    background-image:url('http://www.adobewordpress.com/tasarim/images/iphone6.png');
+    background-size:100% 100%;
+    margin:0 auto;
+    position:relative;
+  }
+  
+  .border{
+      position:absolute;
+      top:12.3%;right:7%;left:7%;bottom:12%;
+      overflow:hidden;
+  }
+  
+  a.article{
+    position:fixed;
+    bottom:15px;left:15px;
+    display:table;
+    text-decoration:none;
+    color:white;
+    background-color:#00e34d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font: 400 15px 'Open Sans', sans-serif;
+  }
+
+
+
+@media(min-width: 800px){
+  main .project2 .text{
+    font: 400 15px 'Open Sans', sans-serif;
+    font-size:100px;
+    position: relative;
+    width: 450px;
+    /*left: 550px;*/
+    left: 40%;
+    margin-left: -200px;
+    height: 40px;
+    top: 22%;
+    margin-top: -200px;
+  }
+}  
+
+  
+main .project2 .text  p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+  
+main .project2 .text .word{
+    position: absolute;
+    width: 600px;
+    opacity: 0;
+  }
+  
+main .project2 .text .letter{
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+main .project2 .text .letter.out{
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+main .project2 .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+main .project2 .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.17, 0.885, 0.32, 1.275);
+  }
+  
+  .wisteria {
+    color: #8e44ad;
+  }
+  
+  .belize {
+    color: #2980b9;
+  }
+  
+  .pomegranate {
+    color: #c0392b;
+  }
+  
+  .green {
+    color: #16a085;
+  }
+  
+  .midnight {
+    color: #2c3e50;
+  }
+  
+
+/* Trying a graph animation */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+
+.igFrameBar {
+	width: 400px;
+  height: 200px;
+  top: 40px;
+  left: -20px;
+	position: relative;
+	background: #f2f2f2;
+	margin: 15% auto 0px auto;
+	transform: translate(0, -50%);
+}
+
+.igFrameBar:before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+}
+
+.igFrameBar:after {
+	content: "";
+	width: 100%;
+	height: 50%;
+	background: transparent;
+	position: absolute;
+	top: 25%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.igData {
+	width: 20px;
+	position: absolute;
+	bottom: 1px;
+	margin: 0px 0px 0px 0px;
+	z-index: 99;
+	float: left;
+}
+
+.igData1 {
+	background: #9baec8;
+	height: 0px;
+	left: 26.36364px;
+	-webkit-animation: showBar1 1.2s 0.1s forwards;
+	-moz-animation: showBar1 1.2s 0.1s forwards;
+	animation: showBar1 1.2s 0.1s forwards;
+}
+
+.igData2 {
+	background: #d9e1e8;
+	height: 0px;
+	left: 62.72727px;
+	-webkit-animation: showBar2 1.2s 0.2s forwards;
+	-moz-animation: showBar2 1.2s 0.2s forwards;
+	animation: showBar2 1.2s 0.2s forwards;
+}
+
+.igData3 {
+	background: #2b90d9;
+	height: 0px;
+	left: 99.09091px;
+	-webkit-animation: showBar3 1.2s 0.3s forwards;
+	-moz-animation: showBar3 1.2s 0.3s forwards;
+	animation: showBar3 1.2s 0.3s forwards;
+}
+
+.igData4 {
+	background: #8ec0e4;
+	height: 0px;
+	left: 135.45455px;
+	-webkit-animation: showBar4 1.2s 0.4s forwards;
+	-moz-animation: showBar4 1.2s 0.4s forwards;
+	animation: showBar4 1.2s 0.4s forwards;
+}
+
+.igData5 {
+	background: #cadbe9;
+	height: 0px;
+	left: 171.81818px;
+	-webkit-animation: showBar5 1.2s 0.5s forwards;
+	-moz-animation: showBar5 1.2s 0.5s forwards;
+	animation: showBar5 1.2s 0.5s forwards;
+}
+
+.igData6 {
+	background: #6aafe6;
+	height: 0px;
+	left: 208.18182px;
+	-webkit-animation: showBar6 1.2s 0.6s forwards;
+	-moz-animation: showBar6 1.2s 0.6s forwards;
+	animation: showBar6 1.2s 0.6s forwards;
+}
+
+.igData7 {
+	background: #d6ecfa;
+	height: 0px;
+	left: 244.54545px;
+	-webkit-animation: showBar7 1.2s 0.7s forwards;
+	-moz-animation: showBar7 1.2s 0.7s forwards;
+	animation: showBar7 1.2s 0.7s forwards;
+}
+
+.igData8 {
+	background: #a5dff9;
+	height: 0px;
+	left: 280.90909px;
+	-webkit-animation: showBar8 1.2s 0.8s forwards;
+	-moz-animation: showBar8 1.2s 0.8s forwards;
+	animation: showBar8 1.2s 0.8s forwards;
+}
+
+.igData9 {
+	background: #dae9f4;
+	height: 0px;
+	left: 317.27273px;
+	-webkit-animation: showBar9 1.2s 0.9s forwards;
+	-moz-animation: showBar9 1.2s 0.9s forwards;
+	animation: showBar9 1.2s 0.9s forwards;
+}
+
+.igData10 {
+	background: #d3e0f7;
+	height: 0px;
+	left: 353.63636px;
+	-webkit-animation: showBar10 1.2s 1s forwards;
+	-moz-animation: showBar10 1.2s 1s forwards;
+	animation: showBar10 1.2s 1s forwards;
+}
+
+.igData:before {
+	position: absolute;
+	top: -16px;
+	font-size: 12px;
+	color: #333;
+	font-family: "roboto";
+	font-weight: 300;
+}
+
+.igData1:before {
+	content: "50%";
+}
+
+.igData2:before {
+	content: "40%";
+}
+
+.igData3:before {
+	content: "70%";
+}
+
+.igData4:before {
+	content: "22%";
+}
+
+.igData5:before {
+	content: "35%";
+}
+
+.igData6:before {
+	content: "40%";
+}
+
+.igData7:before {
+	content: "85%";
+}
+
+.igData8:before {
+	content: "36%";
+}
+
+.igData9:before {
+	content: "88%";
+}
+
+.igData10:before {
+	content: "62%";
+}
+
+.igData:after {
+	position: absolute;
+	bottom: -55px;
+	transform: rotate(30deg);
+	color: #666;
+	font-size: 14px;
+	text-align: left;
+	font-family: "roboto";
+	font-weight: 300;
+	width: 150px;
+}
+
+.igData1:after {
+	content: "Matt";
+}
+
+.igData2:after {
+	content: "Steve";
+}
+
+.igData3:after {
+	content: "Mark";
+}
+
+.igData4:after {
+	content: "Jade";
+}
+
+.igData5:after {
+	content: "Ray";
+}
+
+.igData6:after {
+	content: "Oliver";
+}
+
+.igData7:after {
+	content: "Barry";
+}
+
+.igData8:after {
+	content: "Felicity";
+}
+
+.igData9:after {
+	content: "Malcom";
+}
+
+.igData10:after {
+	content: "Ted";
+}
+
+@-webkit-keyframes showBar1 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 50%;
+	}
+}
+
+@-webkit-keyframes showBar2 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 40%;
+	}
+}
+
+@-webkit-keyframes showBar3 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 70%;
+	}
+}
+
+@-webkit-keyframes showBar4 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 22%;
+	}
+}
+
+@-webkit-keyframes showBar5 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 35%;
+	}
+}
+
+@-webkit-keyframes showBar6 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 40%;
+	}
+}
+
+@-webkit-keyframes showBar7 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 85%;
+	}
+}
+
+@-webkit-keyframes showBar8 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 36%;
+	}
+}
+
+@-webkit-keyframes showBar9 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 88%;
+	}
+}
+
+@-webkit-keyframes showBar10 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 62%;
+	}
+}
+
+@-moz-keyframes showBar1 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 50%;
+	}
+}
+
+@-moz-keyframes showBar2 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 40%;
+	}
+}
+
+@-moz-keyframes showBar3 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 70%;
+	}
+}
+
+@-moz-keyframes showBar4 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 22%;
+	}
+}
+
+@-moz-keyframes showBar5 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 35%;
+	}
+}
+
+@-moz-keyframes showBar6 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 40%;
+	}
+}
+
+@-moz-keyframes showBar7 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 85%;
+	}
+}
+
+@-moz-keyframes showBar8 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 36%;
+	}
+}
+
+@-moz-keyframes showBar9 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 88%;
+	}
+}
+
+@-moz-keyframes showBar10 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 62%;
+	}
+}
+
+@keyframes showBar1 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 50%;
+	}
+}
+
+@keyframes showBar2 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 40%;
+	}
+}
+
+@keyframes showBar3 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 70%;
+	}
+}
+
+@keyframes showBar4 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 22%;
+	}
+}
+
+@keyframes showBar5 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 35%;
+	}
+}
+
+@keyframes showBar6 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 40%;
+	}
+}
+
+@keyframes showBar7 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 85%;
+	}
+}
+
+@keyframes showBar8 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 36%;
+	}
+}
+
+@keyframes showBar9 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 88%;
+	}
+}
+
+@keyframes showBar10 {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 62%;
+	}
+}
+
+
+/* project 3 */
+
+@media(min-width:800px){
+  main .project3{
+    height: 270vh;
+    background: black;
+}
+}
+
+
+.big-type { 
+    /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+    font-size: 64px;
+    height: 60vh;
+    line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+    font-weight: 600; /* Nice, chunky, bold! */
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+  
+  .masked-copy { 
+    /* This is it! Magic: */
+    -webkit-background-clip: text;
+    color: transparent !important;
+    
+  }
+  
+  .masked-copy h2 { 
+    color: white;
+    position: relative;
+    left: 350px;
+    top: 70px;
+    display: inline;
+    font: inherit;
+  }
+
+  .masked-copy h1{
+      color: white;
+      font: inherit;
+      position: relative;
+      top: 50px;
+      left: 650px;
+  }
+  
+  .masked-copy p {
+    display: inline;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: #FFA500;
+    top: 150px;
+    left: 11%;
+    font-size: 150px;
+  }
+  
+  /* .texture-orange {
+    color: #e5895f;
+    background-image: url('https://www.apple.com/v/iphone-xr/a/images/overview/copy_texture_4_large.jpg');
+  } */
+
+
+@media(min-width:1290px) and (max-width:1310px){
+  .masked-copy p{
+    left: 65px;
+  }
+}
+
+
+main .project3 .explanation{
+  position: relative;
+  left: -600px;
+  top: 400px;
+  display: block;
+  height: 100px;
+}
+:root {
+  --color-bg: #34304c;
+  --color-bg2: #534d7a;
+  --color-highlight: #fff;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+.goo {
+  font-size: 3rem;
+  line-height: 1.35;
+  display: inline;
+  box-decoration-break: clone;
+  background: var(--color-highlight);
+  padding: 0.5rem 1rem;
+  filter: url('#goo');
+  color: black;
+}
+
+.goo:focus {
+  outline: 0;
+}
+
+.edit {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-bg2);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: var(--color-highlight);
+  border-radius: 1em;
+}
+
+
+.container{
+  width: 1000px;
+  position: relative;
+  left: 16%;
+  right: 50%;
+  top: 720px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .card{
+  position: relative;
+  cursor: pointer;
+}
+
+.container .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+#firstone{
+  position: relative;
+  left: 27px;
+}
+
+@media(min-width:700px){
+  .container .card .face.face1
+{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  background: #ff0057;
+  transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+  
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+#firstone{
+  position: relative;
+  left: 40px;
+}
+
+
+
+#secondlist{
+  position: relative;
+  top: 14px;
+}
+
+#thirdlist{
+  position: relative;
+  top: 14px;
+}
+
+
+.container .card .face.face1 .content h3{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+
+.container .card .face.face2 .content ul{
+  font-family: 'Overpass', sans-serif;
+  list-style-position: inside;
+  position: relative;
+  padding-right: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-indent: 0%;
+  padding: 0;
+}
+
+.container .card .face.face2 .content{
+  position: relative;
+  left: 15px;
+  top: -10px;
+}
+
+.container .card .face.face2 .content li{
+  font-size: 20px;
+}
+
+
+
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+}
+
+
+
+main .project3-changebg{
+  height: 200vh;
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
+
+  margin-left: -600px;
+  height: 200vh;
+}
+
+
+main .meettheteam{
+  position: relative;
+  top: -40px;
+  height: 60vh;
+  background: white;
+}
+
+.popout {
+  font-family: Futura, sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 80px;
+}
+@keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 lightblue;
+    color: black;
+ }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 lightblue;
+    color: black;
+ }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em lightblue;
+    color: black;
+ }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em lightblue;
+    color: black;
+ }
+}
+.popout span {
+  position: relative;
+  display: inline-block;
+  animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popout span:nth-last-child(1n) {
+  animation-delay: -0.1666666667s;
+}
+.popout span:nth-last-child(2n) {
+  animation-delay: -0.3333333333s;
+}
+.popout span:nth-last-child(3n) {
+  animation-delay: -0.5s;
+}
+
+
+
+main .project4{
+  height: 230vh;
+  background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+}
+
+main .project4 .title {
+  position: relative;
+  top: 390px;
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+}
+
+main .project4 h1 {
+  background-image: url(../assets/wall.jpg);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 120px;
+  line-height: .90;
+
+  margin: 10px 0;
+}
+/* styling my button */
+
+main .project4 .white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #FFF;
+  transition: .35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+}
+
+main .project4 .white-mode:hover {
+  background-color: #FFF;
+  color: #122;
+}
+
+main .project4 .inner{
+  height: 200vh;
+  padding-top: 350px;
+  width: 700px;
+}
+
+
+
+ 
+main .project4 #Novantas{
+  font-family: 'Karla', sans-serif;
+  font-size: 19px;
+  line-height: 34px;
+  color: black;
+  position: relative;
+  top: -50px;
+  left: -250px;
+}
+
+main .project4 .right{
+  position: relative;
+  left: 500px;
+  top: -5px;
+
+}
+
+main .project4 img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border: 1px solid black;
+  float: left;
+  display: block;
+  position: relative;
+  left: 150px;
+  border-width: 3px;
+
+}
+
+
+main .project4 #description{
+  position: relative;
+  left: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: 437px;
+}
+
+main .project4 #company, #description{
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+@media(max-width:800px){
+  main .project4 #work-description{
+    display: none;
+}
+
+/* Need a nice border as well */
+
+}
+
+main .project4 #work-description{
+  margin-left: 9.7rem;
+  color: black;
+  position: relative;
+  left: -350px;
+  width: 800px;
+}
+
+main .project4 li{
+  padding-bottom: 1em;
+  list-style-type: disc;
+  position: relative;
+  left: 196px;
+  line-height: 15px;
+}
+
+
+main .project4 ul{
+  line-height: 20px;
+}
+
+main .project4 .firstline{
+  position: relative;
+  left: -50px;
+}
+main .project4 .secondline{
+  position: relative;
+  left: -41.7px;
+}
+
+main .project4 .secondline1{
+  position: relative;
+  left: -99px;
+}
+
+main .project4 .firstline2{
+  position: relative;
+  left: -62px;
+}
+
+main .project4 .thirdline{
+  position: relative;
+  left: -18.82rem;
+}
+
+
+main .project4 .firstline3{
+  position: relative;
+  left: -3.3rem;
+}
+
+
+main .project4 .secondline3{
+  position: relative;
+  left: -7rem;
+}
+
+
+
+/* Section - Resume. */
+
+main .resume{
+  height: 170vh;
+  background-color: #FFDEE9;
+  background-image: linear-gradient( #FFDEE9 0%, #B5FFFC 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+
+.heading-for-resume {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: black;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  display: none;
+}
+
+/* Animation */
+.heading-for-resume {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 342px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+main .resume .code{
+  height: 300vh;
+  position: relative;
+  top: 250px;
+  border-radius: 5px;
+  width: 750px;
+  margin:0 auto;
+  padding-top: 15px;
+  background: #ccc;
+  height: 700px;
+  font-family: 'Monaco', 'Courier New';
+  text-align: left;
+  font-size: 13px;
+  color: #fafafa;
+}
+
+
+main .resume .console{
+  width: 670px;
+  line-height: 20px;
+  padding: 40px;
+  height: 650px;
+  margin: 0 auto;
+  background: #383737;
+}
+
+main .resume .answer{
+  color: #ccc;
+  position: relative;
+  left: 1rem;
+}
+
+
+main .resume .moveleft{
+  position: relative;
+  left: 1.9rem;
+}
+
+
+main .resume .specialone{
+  position: relative;
+  top: -15px;
+}
+
+
+main .resume .answer-specialone{
+  position: relative;
+  left: 1rem;
+  top: -34.7px;
+  color: #ccc;
+}
+
+
+main .resume .newone{
+  position: relative;
+  top: -34px;
+}
+
+main .resume .answer-newone{
+  position: relative;
+  left: 1rem;
+  top: -3.2rem;
+  color: #ccc;
+}
+
+main .resume a{
+  color: #3a92c8;
+}
+
+/* Typewriter effect for resume section */
+
+/* Contact-Me form */
+
+main .Contact-Me{
+  height: 150vh;
+  background: black;
+  padding-top: 20px;
+  position: relative;
+}
+
+main .Contact-Me h1{
+  /*
+  position: relative;
+  top: 50px;
+  left: 480px;
+  */
+  text-align: center;
+  color: white;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 690;
+}
+
+main .Contact-Me footer{
+  position: absolute;
+  bottom: 0;
+  left: 650px;
+  color: white;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+}
+
+main .Contact-Me {
+  --base-grid: 8px;
+  --colour-body-background: white;
+  --colour-background: #fff;
+  --colour-background-folded: #f5f5f5;
+  --colour-background-stripes: rgba(255,255,255,.5);
+  --colour-text: #1a1a1a;
+}
+
+
+
+main.Contact-Me, main .Contact-Me :after, main .Contact-Me :before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main .Contact-Me body {
+  background: var(--colour-body-background);
+  font-family: Bitter;
+  padding: calc(var(--base-grid)*10);
+}
+
+.articles {
+  position: relative;
+  top: 250px;
+  margin: calc(var(--base-grid)*2) auto calc(var(--base-grid)*5);
+  display: grid;
+  grid-row-gap: calc(var(--base-grid)*8);
+  grid-column-gap: calc(var(--base-grid)*6);
+  grid-template-columns: repeat(auto-fit,minmax(calc(var(--base-grid)*35),1fr));
+  justify-items: center;
+}
+
+.articles__article {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  perspective: 1000px;
+  animation-name: animateIn;
+  animation-duration: .35s;
+  animation-delay: calc(var(--animation-order)*100ms);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.articles__article:before {
+  content: "";
+  position: absolute;
+  top: calc(var(--base-grid)*-2);
+  left: calc(var(--base-grid)*-2);
+  border: 2px dashed var(--colour-background);
+  background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px,var(--colour-background-stripes) 0, var(--colour-background-stripes) 5px);
+  z-index: -1;
+}
+
+.articles__article,
+.articles__article:before {
+  width: calc(var(--base-grid)*35);
+  height: calc(var(--base-grid)*35);
+}
+
+.articles__link {
+  background-color: var(--colour-body-background);
+  border: 2px solid var(--colour-background);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.articles__link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(var(--base-grid)*3);
+  width: calc(var(--base-grid)*2);
+  height: calc(var(--base-grid)*2);
+  margin-top: calc(var(--base-grid)*-1);
+  clip-path: polygon(75% 0,100% 50%,75% 100%,0 100%,25% 50%,0 0);
+  -webkit-clip-path: polygon(75% 0,100% 50%,75% 100%,0 100%,25% 50%,0 0);
+  background-color: var(--colour-background);
+  opacity: 0;
+  transition: opacity .5s ease-in,transform .3s ease-in-out 0ms;
+}
+
+.articles__content {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: calc(var(--base-grid)*2);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--colour-background);
+}
+
+.articles__content--lhs {
+  clip-path: polygon(0 0,51% 0,51% 100%,0 100%);
+  -webkit-clip-path: polygon(0 0,51% 0,51% 100%,0 100%);
+}
+
+.articles__content--rhs {
+  clip-path: polygon(50% 0,100% 0,100% 100%,50% 100%);
+  -webkit-clip-path: polygon(50% 0,100% 0,100% 100%,50% 100%);
+  transition: transform .5s ease-in-out,background-color .4s ease-in-out;
+}
+
+#GitHub{
+  position: relative;
+  left: 67px;
+}
+
+#GitHub-p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+  
+}
+#Mail{
+  position: relative;
+  left: 82px;
+}
+
+#Mail-p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+}
+
+#LinkedIn{
+  position: relative;
+  left: 67px;
+}
+
+
+/* For phones */
+
+/*
+@media(max-width:600px){
+  main .articles__footer #L-p2{
+    display: inline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    position: relative;
+    left: 40px;
+  }
+  main .articles__footer #L-p{
+    display: none;
+
+  }
+  
+  main .articles__footer{
+    width: 900px;
+  }
+
+}
+*/
+
+#L-p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+}
+
+
+
+.articles__title {
+  font-size: calc(var(--base-grid)*4);
+  line-height: 1.125;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.articles__footer {
+  margin-top: auto;
+  font-size: calc(var(--base-grid)*2);
+  line-height: calc(var(--base-grid)*2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__link:hover .articles__content--rhs {
+  background-color: var(--colour-background-folded);
+  transform: rotateY(-50deg);
+}
+
+.articles__link:hover:after {
+  opacity: 1;
+  transform: translateX(calc(var(--base-grid)*1.5));
+  transition: opacity .5s ease-in,transform .3s ease-in-out .25s;
+}
+
+main .Contact-Me button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+main .Contact-Me button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+main .Contact-Me #container {
+  border: solid 3px #474544;
+  max-width: 1000px;
+  margin: 60px auto;
+  position: relative;
+  top: 180px;
+}
+
+
+main .project .Contact-Me input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+.contact-info{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .Contact-Me .card{
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  height: 140px;
+  background-color: #444;
+  margin: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  font-size: 32px;
+  color: #ea8685;
+  transition: .3s linear;
+}
+
+.card:hover .icon{
+  transform: scale(4);
+  opacity: 0;
+}
+
+.card-content h3,
+.card-content span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  opacity: 0;
+}
+
+.card-content h3{
+  top: 20px;
+  text-transform: uppercase;
+  color: #ea8685;
+}
+
+.card-content span{
+  bottom: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.card:hover h3{
+  opacity: 1;
+  top: 46px;
+  transition: .3s linear .3s;
+}
+
+.card:hover span{
+  opacity: 1;
+  bottom: 46px;
+  transition: .3s linear .3s;
+}
+
+
+@media screen and (max-width:900px){
+  .card{
+      flex: 100%;
+      max-width: 500px;
+  }
+}
+
+
+
+
+
+main .footer{
+  background: #F2F3EB;
+
+
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+}
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  font-style: italic;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.heading h1 {
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+main .tryouts{
+  height: 250vh;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 500px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* Viewport less than 750px */
+
+/* Main Content */
+
+/* Viewport less than 750px */
+
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+
+/* Viewport less than 880px */
+
+@media(max-width: 880px){
+    main h1{
+        font-size: 1.5rem;
+
+    }
+
+    main h2{
+        padding: 1.5px;
+        font-size: 1.5rem;
+    }
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+
+/* Viewport for Iphones. */
+
+/* iphone 3 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) { }
+
+/* iphone 4 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) { }
+
+/* iphone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { }
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+  @viewport{
+    viewport-fit: cover;
+  }
+  body { padding: env(safe-area-inset, 0px); }
+
+
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+
+/* What I have been working on- section */
+
+.working-on h2{
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+  left: -29px;
+}
+
+
+/* Reducing the size of the section*/
+
+.project1{
+  top: -120px;
+  height: 590vh;
+}
+
+.project1 #project-title{
+  font-size: 60px;
+
+}
+
+
+.project-description #project-title2{
+  font-size: 65px;
+  position: relative;
+  top: -20px;
+  text-align: center;
+}
+
+.project-description .card{
+  display: none;
+}
+
+main .project1{
+  border-radius: 40px;
+}
+
+main .project1 .my-flex-container .a{
+  border-radius: 40px;
+}
+
+/* Puttin gall the cards on the left */
+
+.my-flex-container{
+  position: relative;
+  left: -40px;
+  top: -300px;
+}
+
+/*Trying to remove the hovering effects completely */
+
+
+/* First card on project1 */
+main .my-flex-container #first-card{
+  width: 70em;
+  position: relative;
+}
+
+/* Project1 cards */
+
+.my-flex-container .card a{
+  height: 340px;
+}
+
+
+main .project1 h4{
+  position: relative;
+  left: -5px;
+}
+/* Personalisation to each card to make it look perfect */
+
+#first-card #heading-chattime{
+  position: relative;
+  left: -18px;
+}
+
+#first-card p{
+  text-align: center;
+}
+#third-card .card--hover ul{
+  left: -60px;
+}
+
+#fourth-card a, #fifth-card a{
+  width: 17em;
+  height: 30em;
+  position: relative;
+  left: -87px;
+}
+
+#fourth-card .tool1, #fifth-card .tool2{
+  display: none;
+}
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+  position: relative;
+  left: 22px;
+
+}
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
+
+#fourth-card li, #fifth-card li{
+text-align: left;
+
+}
+
+#fifth-card a{
+  bottom: 20px;
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  top: -83px;
+}
+
+#fourth-card a{
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  margin: -4px;
+  top: -102px;
+}
+
+#second-card a,#third-card a{
+  width: 240px;
+  margin: -10px;
+  position: relative;
+  left: -42px;
+  
+}
+
+#first-card a{
+  position: relative;
+  left: -60px;
+}
+
+#second-card a{
+  width: 250px;
+  left: -52px;
+}
+
+
+
+main .project1{
+  width: 500px;
+}
+
+
+
+#third-card ul > p{
+  width: 260px;
+
+}
+
+
+
+/* Project 2 */
+
+.project2{
+  height: 210vh;
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  display: none;
+  position: relative;
+  left: 280px;
+  top: 200px;
+  transform: translate(-50%, -50%);
+  width: 120vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 200em;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+ 
+  transform: translate(0, -100%);
+}
+
+/* Changing Built with as well */
+
+main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 40px;
+  position: relative;
+  width: 230px;
+  left: 20px;
+  height: 40px;
+  top: 24%;
+  margin-top: -200px;
+}
+
+
+/* Project 3 */
+main .project3{
+  min-height: 550vh;
+  background: black;
+  overflow: hidden;
+}
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+  font-size: 64px;
+  height: 60vh;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  font-weight: 600; /* Nice, chunky, bold! */
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.masked-copy { 
+  /* This is it! Magic: */
+  -webkit-background-clip: text;
+  color: transparent !important;
+  
+}
+
+.project3 p{
+  position: relative;
+  top: -10px;
+  top: 50px;
+  left: -6px;
+  font-size: 115px;
+  color: #FFA177FF;
+}
+
+.firstline{
+  position: relative;
+  left: 13px;
+}
+
+.project3 .secondline{
+  position: relative;
+  left: 120px;
+
+}
+
+.project3 .thirdline{
+  position: relative;
+  left: 32px;
+}
+
+.project3 .container{
+  top: 1250px;
+  left: 35px;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.project3 .goo{
+  position: relative;
+  top: -180px;
+  left: -38px;
+}
+.project3 .explanation .goo #newline::before{
+  content: '\a';
+  white-space: pre;
+}
+
+.container .card .face.face1
+{
+  position: relative;
+  background: #ff0057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.container .card .face.face1 .content{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  transition: 0.5s;
+  
+}
+
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+#firstone{
+  position: relative;
+  left: 40px;
+}
+
+
+
+#secondlist{
+  position: relative;
+  top: 14px;
+}
+
+#thirdlist{
+  position: relative;
+  top: 14px;
+}
+
+
+.container .card .face.face1 .content h3{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container .card .face.face2 .content ul{
+  font-family: 'Cherry Swash', cursive;
+  list-style-position: inside;
+  position: relative;
+  padding-right: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-indent: 0%;
+  padding: 0;
+}
+
+.container .card .face.face2 .content{
+  position: relative;
+  left: 15px;
+  top: -10px;
+  
+}
+
+.container .card .face.face2 .content li{
+  font-size: 20px;
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card{
+  pointer-events: none;
+  margin-bottom: 85px;
+}
+
+.container .card .face.face2{
+  height: 270px;
+}
+
+
+
+/* Section - Meet The Team */
+.meettheteam p{
+  font-size: 73px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  left: -65px;
+}
+
+
+main .project3-changebg{
+  height: 430px;
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
+  width: 900px;
+  background-size: 600px;
+  position: relative;
+  left: 440px;
+}
+
+
+.project3 .container .face.face2 li{
+  position: relative;
+  left: -20px;
+}
+
+
+/* Work-Experience Section */
+
+main .project4{
+  height: 1050px;
+}
+
+.project4 .title h1{
+  font-size: 53px;
+  position: relative;
+  top: -80px;
+  
+}
+
+main .project4 .inner{
+  width: 500px;
+
+}
+
+main .project4 #Novantas{
+  position: relative;
+  left: 87px;
+  height: 157px;
+  margin-left: -20px;
+  top: -200px;
+
+}
+
+main .project4 img{
+  position: relative;
+  left: 5px;
+  top: 20px;
+  
+  height: 90px;
+  width: 90px;
+}
+main .project4 b{
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  left: -50px;
+  margin: 0px;
+}
+
+main .project4 #company{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  top: 9px;
+  left: -68px;
+}
+main .project4 #description{
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  position: relative;
+  left: 7px;
+  top: 6px;
+}
+
+
+
+main .project4 .right{
+  position: relative;
+  left: -210px;
+  top: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: -239px;
+  top: 65px;
+}
+
+
+main .project4 #Novantas{
+  border: 1px;
+  border-style: groove;
+  border-radius: 17px;
+  border-width: thick;
+}
+
+
+
+
+
+/* Resume section */
+
+main .resume{
+  height: 1200px;
+}
+main .resume .code{
+  left: -30px;
+}
+
+main .resume .console{
+  height: 700px;
+  border-bottom: 15px solid #ccc;
+  
+}
+
+main .resume .breaknow{
+  position: relative;
+}
+
+main .resume .breaknow::before{
+  content: '\a';
+  white-space: pre;
+}
+
+main .resume .breaknow{
+  position: relative;
+  left: 30px;
+}
+
+/* Last Section -> Let's get in touch */
+
+main .Contact-Me ol{
+  position: relative;
+  top: 50px;
+  left: -10px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 130px;
+  top: 130px;
+}
+
+main .Contact-Me{
+  height: 200vh;
+}
+
+main .articles__footer{
+  width: 900px;
+}
+
+
+
+main .Contact-Me #Mail-p{
+  position: relative;
+  left: 14px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 110px;
+}
+}
+
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  @viewport{
+    viewport-fit: cover;
+  }
+  body { padding: env(safe-area-inset, 0px); }
+
+
+
+/* Making the Connec-ted page a bit larger */
+
+main .project2{
+  height: 190vh;
+}
+
+
+/* Making the"Built part" to go to the right" */
+main .project2 .text p{
+  position: relative;
+  left: 20px;
+}
+
+/* Sliding the Coffee and Code part to the right */
+
+main .project3 .masked-copy p{
+  position: relative;
+  left: 8px;
+}
+
+
+/* Getting the Coffee sections description list a bit up */
+
+main .project3 .container{
+  position: relative;
+  top: 1100px;
+  left: 55px;
+}
+
+/* Sliding the fourth and the fifth card a bit to the right */
+
+main .my-flex-container #fourth-card, main .my-flex-container #fifth-card{
+  position: relative;
+  left: 20px;
+}
+
+}
+
+/* iphone X , XS, 11 Pro */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+
+
+
+
+/* Getting my heading down a bit */  
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.toggle-icons{
+  padding-left: 6%;
+  width: 356px;
+}
+
+
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+/* What I have been working on- section */
+
+.working-on h2{
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+  left: -39px;
+}
+
+
+/* Reducing the size of the section*/
+
+.project1{
+  top: -120px;
+}
+
+.project1 #project-title{
+  font-size: 60px;
+
+}
+
+.project-description #project-title2{
+  font-size: 65px;
+  position: relative;
+  top: -20px;
+
+  text-align: center;
+}
+
+.project-description .card{
+  display: none;
+}
+
+main .project1{
+  border-radius: 40px;
+  height: 560vh;
+}
+
+main .project1 .my-flex-container .a{
+  border-radius: 46px;
+}
+
+
+
+/* Puttin gall the cards on the left */
+
+.my-flex-container{
+  position: relative;
+  left: -30px;
+  top: -30vh;
+}
+
+/*Trying to remove the hovering effects completely */
+
+
+/* First card on project1 */
+
+
+/* Project1 cards */
+
+.my-flex-container .card a{
+  height: 340px;
+}
+
+/* Personalisation to each card to make it look perfect */
+
+#first-card #heading-chattime{
+  position: relative;
+  left: -18px;
+}
+
+#first-card p{
+  text-align: center;
+}
+
+#first-card .firstline{
+  position: relative;
+  left: -2px;
+}
+#third-card .card--hover ul{
+  left: -60px;
+}
+
+#fourth-card a, #fifth-card a{
+  width: 17em;
+  height: 30em;
+  position: relative;
+  left: -87px;
+}
+
+#fourth-card .tool1, #fifth-card .tool2{
+  display: none;
+}
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+  position: relative;
+  left: 22px;
+
+}
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
+
+#fourth-card li, #fifth-card li{
+text-align: left;
+
+}
+
+#fifth-card a{
+  bottom: 20px;
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  top: -83px;
+}
+
+#fourth-card a{
+  width: 255px;
+  padding-left: 1px;
+  position: relative;
+  left: -55px;
+  margin: -4px;
+  top: -102px;
+}
+
+#second-card a,#third-card a{
+  width: 240px;
+  margin: -10px;
+  position: relative;
+  left: -42px;
+  
+}
+
+#first-card a{
+  position: relative;
+  left: -60px;
+}
+
+#second-card a{
+  width: 250px;
+  left: -52px;
+}
+
+
+
+main .project1{
+  width: 500px;
+}
+
+
+
+#third-card ul > p{
+  width: 260px;
+
+}
+
+/* Project 2 */
+
+.project2{
+  height: 210vh;
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  display: none;
+  position: relative;
+  left: 280px;
+  top: 200px;
+  transform: translate(-50%, -50%);
+  width: 120vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 200em;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+ 
+  transform: translate(0, -100%);
+}
+
+/* Changing Built with as well */
+
+ main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 40px;
+  position: relative;
+  width: 230px;
+  left: 30px;
+  height: 40px;
+  top: 24%;
+  margin-top: -200px;
+} 
+
+
+main .project2 .text p{
+  position: relative;
+  left: -8px;
+}
+
+
+/* Project 3 */
+main .project3{
+  min-height: 650vh;
+  background: black;
+  overflow: hidden;
+}
+
+main .project3{
+  height: 500vh;
+}
+
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+  font-size: 64px;
+  height: 60vh;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  font-weight: 600; /* Nice, chunky, bold! */
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.masked-copy { 
+  /* This is it! Magic: */
+  -webkit-background-clip: text;
+  color: transparent !important;
+  
+}
+
+.project3 p{
+  position: relative;
+  top: -10px;
+  top: 50px;
+  left: -10px;
+  font-size: 115px;
+  color: #FFA177FF;
+}
+
+.firstline{
+  position: relative;
+  left: 13px;
+}
+
+.project3 .secondline{
+  position: relative;
+  left: 120px;
+
+}
+
+.project3 .thirdline{
+  position: relative;
+  left: 32px;
+}
+
+.project3 .container{
+  top: 1250px;
+  left: 35px;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.project3 .goo{
+  position: relative;
+  top: -180px;
+  left: -38px;
+}
+.project3 .explanation .goo #newline::before{
+  content: '\a';
+  white-space: pre;
+}
+
+.container .card .face.face1
+{
+  position: relative;
+  background: #ff0057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.container .card .face.face1 .content{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  transition: 0.5s;
+  
+}
+
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+#firstone{
+  position: relative;
+  left: 40px;
+}
+
+
+
+#secondlist{
+  position: relative;
+  top: 14px;
+}
+
+#thirdlist{
+  position: relative;
+  top: 14px;
+}
+
+
+.container .card .face.face1 .content h3{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container .card .face.face2 .content ul{
+  font-family: 'Cherry Swash', cursive;
+  list-style-position: inside;
+  position: relative;
+  padding-right: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-indent: 0%;
+  padding: 0;
+}
+
+.container .card .face.face2 .content{
+  position: relative;
+  left: 15px;
+  top: -10px;
+  
+}
+
+.container .card .face.face2 .content li{
+  font-size: 20px;
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card{
+  pointer-events: none;
+  margin-bottom: 85px;
+}
+
+.container .card .face.face2{
+  height: 270px;
+}
+
+
+
+/* Section - Meet The Team */
+.meettheteam p{
+  font-size: 73px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  left: -65px;
+}
+
+
+main .project3-changebg{
+  height: 430px;
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
+  width: 900px;
+  background-size: 600px;
+  position: relative;
+  left: 440px;
+}
+
+
+.project3 .container .face.face2 li{
+  position: relative;
+  left: -20px;
+}
+
+
+/* Work-Experience Section */
+
+main .project4{
+  height: 1050px;
+}
+
+.project4 .title h1{
+  font-size: 53px;
+  position: relative;
+  top: -80px;
+  
+}
+
+main .project4 .inner{
+  width: 500px;
+
+}
+
+main .project4 #Novantas{
+  position: relative;
+  left: 87px;
+  height: 157px;
+  margin-left: -20px;
+  top: -200px;
+
+}
+
+main .project4 img{
+  position: relative;
+  left: 5px;
+  top: 20px;
+  
+  height: 90px;
+  width: 90px;
+}
+main .project4 b{
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  left: -50px;
+  margin: 0px;
+}
+
+main .project4 #company{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  top: 9px;
+  left: -68px;
+}
+main .project4 #description{
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  position: relative;
+  left: 7px;
+  top: 6px;
+}
+
+
+
+main .project4 .right{
+  position: relative;
+  left: -210px;
+  top: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: -239px;
+  top: 65px;
+}
+
+
+main .project4 #Novantas{
+  border: 1px;
+  border-style: groove;
+  border-radius: 17px;
+  border-width: thick;
+}
+
+
+
+
+
+/* Resume section */
+
+main .resume{
+  height: 1200px;
+}
+
+/* Kinda iffy about this at the moment: Might be cut to cut */
+main .resume .code{
+  left: -37px;
+}
+
+main .resume .console{
+  height: 700px;
+  border-bottom: 15px solid #ccc;
+  
+}
+
+main .resume .breaknow{
+  position: relative;
+}
+
+main .resume .breaknow::before{
+  content: '\a';
+  white-space: pre;
+}
+
+main .resume .breaknow{
+  position: relative;
+  left: 30px;
+}
+
+
+
+/* Last Section -> Let's get in touch */
+
+
+main .Contact-Me{
+  height: 200vh;
+}
+main .Contact-Me ol{
+  position: relative;
+  top: 50px;
+  left: -14px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 107px;
+  top: 100px;
+}
+
+
+main .articles__footer{
+  width: 900px;
+}
+
+main .Contact-Me #L-p, main .Contact-Me #Mail-p{
+  position: relative;
+  left: 9px;
+}
+
+main .Contact-Me #Mail-p{
+  position: relative;
+  left: 10px;
+}
+
+main .Contact-Me .footer{
+  position: relative;
+}
+
+}
+/* iphone XR, 11 */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+
+  @viewport{
+    viewport-fit: cover;
+  }
+  body { padding: env(safe-area-inset, 0px); }
+
+
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+
+/* What I have been working on- section */
+
+.working-on h2{
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+  left: -29px;
+}
+
+
+/* Reducing the size of the section*/
+
+.project1{
+  top: -120px;
+}
+
+.project1 #project-title{
+  font-size: 65px;
+
+}
+
+.project-description #project-title2{
+  font-size: 65px;
+  position: relative;
+  top: -20px;
+
+  text-align: center;
+}
+
+.project-description .card{
+  display: none;
+}
+
+main .project1{
+  border-radius: 40px;
+}
+
+main .project1 .my-flex-container .a{
+  border-radius: 40px;
+}
+
+/* Puttin gall the cards on the left */
+
+.my-flex-container{
+  position: relative;
+  left: -40px;
+}
+
+/*Trying to remove the hovering effects completely */
+
+
+/* First card on project1 */
+main .my-flex-container #first-card{
+  width: 70em;
+  position: relative;
+}
+
+/* Project1 cards */
+
+.my-flex-container .card a{
+  height: 340px;
+}
+
+/* Personalisation to each card to make it look perfect */
+
+#first-card #heading-chattime{
+  position: relative;
+  left: -18px;
+}
+
+#first-card p{
+  text-align: center;
+}
+#third-card .card--hover ul{
+  left: -60px;
+}
+
+#fourth-card a, #fifth-card a{
+  width: 17em;
+  height: 30em;
+  position: relative;
+  left: -67px;
+}
+
+#fourth-card .tool1, #fifth-card .tool2{
+  display: none;
+}
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+  position: relative;
+  left: 22px;
+
+}
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
+
+#fourth-card li, #fifth-card li{
+text-align: left
+}
+
+#fifth-card a{
+  bottom: 20px;
+}
+
+
+/* Project 2 */
+
+.project2{
+  height: 150vh;
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  display: none;
+  position: relative;
+  left: 320px;
+  top: 250px;
+  transform: translate(-50%, -50%);
+  width: 120vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 200em;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+ 
+  transform: translate(0, -100%);
+}
+
+/* Changing Built with as well */
+
+main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 45px;
+  position: relative;
+  width: 230px;
+  left: 20px;
+  height: 40px;
+  top: 22%;
+  margin-top: -200px;
+}
+
+
+/* Project 3 */
+main .project3{
+  min-height: 380vh;
+  background: black;
+  overflow: hidden;
+}
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+  font-size: 64px;
+  height: 60vh;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  font-weight: 600; /* Nice, chunky, bold! */
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.masked-copy { 
+  /* This is it! Magic: */
+  -webkit-background-clip: text;
+  color: transparent !important;
+  
+}
+
+.project3 p{
+  position: relative;
+  top: -10px;
+  top: 50px;
+  left: -6px;
+  font-size: 125px;
+  color: #FFA177FF;
+}
+
+.firstline{
+  position: relative;
+  left: 13px;
+}
+
+.project3 .secondline{
+  position: relative;
+  left: 120px;
+
+}
+
+.project3 .thirdline{
+  position: relative;
+  left: 32px;
+}
+
+.project3 .container{
+  top: 1000px;
+  left: 50px;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.project3 .goo{
+  position: relative;
+  top: -160px;
+  left: -20px;
+}
+.project3 .explanation .goo #newline::before{
+  content: '\a';
+  white-space: pre;
+}
+
+.container .card .face.face1
+{
+  position: relative;
+  background: #ff0057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.container .card .face.face1 .content{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  transition: 0.5s;
+  
+}
+
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+#firstone{
+  position: relative;
+  left: 40px;
+}
+
+
+
+#secondlist{
+  position: relative;
+  top: 14px;
+}
+
+#thirdlist{
+  position: relative;
+  top: 14px;
+}
+
+
+.container .card .face.face1 .content h3{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container .card .face.face2 .content ul{
+  font-family: 'Cherry Swash', cursive;
+  list-style-position: inside;
+  position: relative;
+  padding-right: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-indent: 0%;
+  padding: 0;
+}
+
+.container .card .face.face2 .content{
+  position: relative;
+  left: 15px;
+  top: -10px;
+  
+}
+
+.container .card .face.face2 .content li{
+  font-size: 20px;
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card{
+  pointer-events: none;
+  margin-bottom: 85px;
+}
+
+.container .card .face.face2{
+  height: 270px;
+}
+
+
+
+/* Section - Meet The Team */
+.meettheteam p{
+  font-size: 75px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  left: -40px;
+}
+
+
+main .project3-changebg{
+  height: 430px;
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
+  width: 900px;
+  background-size: 600px;
+  position: relative;
+  left: 440px;
+}
+
+
+.project3 .container .face.face2 li{
+  position: relative;
+  left: -20px;
+}
+
+
+/* Work-Experience Section */
+
+main .project4{
+  height: 1150px;
+}
+
+.project4 .title h1{
+  font-size: 60px;
+  position: relative;
+  top: -80px;
+  
+}
+
+main .project4 .inner{
+  width: 500px;
+}
+
+main .project4 #Novantas{
+  position: relative;
+  left: 75px;
+  height: 157px;
+  margin-left: -20px;
+  top: -200px;
+
+}
+
+main .project4 img{
+  position: relative;
+  left: 5px;
+  top: 7px;
+  
+  height: 120px;
+  width: 120px;
+}
+main .project4 b{
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  left: -50px;
+  margin: 0px;
+}
+
+main .project4 #company{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  top: 9px;
+  left: -53px;
+}
+main .project4 #description{
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  position: relative;
+  left: 22px;
+  top: 6px;
+}
+
+
+
+main .project4 .right{
+  position: relative;
+  left: -195px;
+  top: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: -225px;
+  top: 65px;
+}
+
+
+main .project4 #Novantas{
+  border: 1px;
+  border-style: groove;
+  border-radius: 17px;
+  border-width: thick;
+}
+
+
+/* Resume section */
+
+main .resume{
+  height: 1200px;
+}
+main .resume .code{
+  left: -30px;
+}
+
+main .resume .console{
+  height: 700px;
+  border-bottom: 15px solid #ccc;
+  
+}
+
+main .resume .breaknow{
+  position: relative;
+}
+
+main .resume .breaknow::before{
+  content: '\a';
+  white-space: pre;
+}
+
+main .resume .breaknow{
+  position: relative;
+  left: 30px;
+}
+
+/* Last Section -> Let's get in touch */
+
+main .Contact-Me ol{
+  position: relative;
+  top: 50px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 130px;
+  top: 130px;
+}
+
+
+main .articles__footer{
+  width: 900px;
+}
+
+main .Contact-Me #L-p, main .Contact-Me #Mail-p{
+  position: relative;
+  left: -5px;
+}
+
+}
+ 
+
+
+/* iphone XS Max, 11 Pro Max */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { 
+  @viewport{
+    viewport-fit: cover;
+  }
+  body { padding: env(safe-area-inset, 0px); }
+
+
+.site-title h1{
+  position: relative;
+  top: 50px;
+}
+
+.site-title h2{
+  position: relative;
+  top: 55px;
+}
+
+.nav .nav-menu, .nav .nav-items{
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  position: relative;
+  left: -1px;
+
+}
+
+
+/* What I have been working on- section */
+
+.working-on h2{
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+  left: -29px;
+}
+
+
+/* Reducing the size of the section*/
+
+.project1{
+  top: -120px;
+}
+
+.project1 #project-title{
+  font-size: 65px;
+
+}
+
+.project-description #project-title2{
+  font-size: 65px;
+  position: relative;
+  top: -20px;
+
+  text-align: center;
+}
+
+.project-description .card{
+  display: none;
+}
+
+main .project1{
+  border-radius: 40px;
+}
+
+main .project1 .my-flex-container .a{
+  border-radius: 40px;
+}
+
+/* Puttin all the cards on the left */
+
+.my-flex-container{
+  position: relative;
+  left: -40px;
+}
+
+/*Trying to remove the hovering effects completely */
+
+
+/* First card on project1 */
+main .my-flex-container #first-card{
+  width: 70em;
+  position: relative;
+}
+
+/* Project1 cards */
+
+.my-flex-container .card a{
+  height: 340px;
+}
+
+/* Personalisation to each card to make it look perfect */
+
+#first-card #heading-chattime{
+  position: relative;
+  left: -18px;
+}
+
+#first-card p{
+  text-align: center;
+}
+#third-card .card--hover ul{
+  left: -60px;
+}
+
+#fourth-card a, #fifth-card a{
+  width: 17em;
+  height: 30em;
+  position: relative;
+  left: -67px;
+}
+
+#fourth-card .tool1, #fifth-card .tool2{
+  display: none;
+}
+#fourth-card .phoneview, #fifth-card .phoneview{
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Recursive', sans-serif;
+  position: relative;
+  left: 22px;
+
+}
+#fourth-card .phoneview span, #fifth-card .phoneview span{
+  position: relative;
+  left: 26px;
+}
+
+#fourth-card li, #fifth-card li{
+text-align: left
+}
+
+#fifth-card a{
+  bottom: 20px;
+}
+
+
+/* Project 2 */
+
+.project2{
+  height: 150vh;
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  display: none;
+  position: relative;
+  left: 320px;
+  top: 250px;
+  transform: translate(-50%, -50%);
+  width: 120vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 200em;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+ 
+  transform: translate(0, -100%);
+}
+
+/* Changing Built with as well */
+
+main .project2 .text{
+  font: 400 15px 'Open Sans', sans-serif;
+  font-size: 45px;
+  position: relative;
+  width: 230px;
+  left: 20px;
+  height: 40px;
+  top: 22%;
+  margin-top: -200px;
+}
+
+
+/* Project 3 */
+main .project3{
+  min-height: 380vh;
+  background: black;
+  overflow: hidden;
+}
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+  font-size: 64px;
+  height: 60vh;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  font-weight: 600; /* Nice, chunky, bold! */
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.masked-copy { 
+  /* This is it! Magic: */
+  -webkit-background-clip: text;
+  color: transparent !important;
+  
+}
+
+.project3 p{
+  position: relative;
+  top: -10px;
+  top: 50px;
+  left: -6px;
+  font-size: 125px;
+  color: #FFA177FF;
+}
+
+.firstline{
+  position: relative;
+  left: 13px;
+}
+
+.project3 .secondline{
+  position: relative;
+  left: 120px;
+
+}
+
+.project3 .thirdline{
+  position: relative;
+  left: 32px;
+}
+
+.project3 .container{
+  top: 1000px;
+  left: 50px;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.project3 .goo{
+  position: relative;
+  top: -160px;
+  left: -38px;
+}
+.project3 .explanation .goo #newline::before{
+  content: '\a';
+  white-space: pre;
+}
+
+.container .card .face.face1
+{
+  position: relative;
+  background: #ff0057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.container .card .face.face1 .content{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  transition: 0.5s;
+  
+}
+
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+#firstone{
+  position: relative;
+  left: 40px;
+}
+
+
+
+#secondlist{
+  position: relative;
+  top: 14px;
+}
+
+#thirdlist{
+  position: relative;
+  top: 14px;
+}
+
+
+.container .card .face.face1 .content h3{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container .card .face.face2 .content ul{
+  font-family: 'Cherry Swash', cursive;
+  list-style-position: inside;
+  position: relative;
+  padding-right: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-indent: 0%;
+  padding: 0;
+}
+
+.container .card .face.face2 .content{
+  position: relative;
+  left: 15px;
+  top: -10px;
+  
+}
+
+.container .card .face.face2 .content li{
+  font-size: 20px;
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card{
+  pointer-events: none;
+  margin-bottom: 85px;
+}
+
+.container .card .face.face2{
+  height: 270px;
+}
+
+
+
+/* Section - Meet The Team */
+.meettheteam p{
+  font-size: 75px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  left: -40px;
+}
+
+
+main .project3-changebg{
+  height: 430px;
+  background-image: url('https://shivs11.github.io/assets/CC.jpg');
+  width: 900px;
+  background-size: 600px;
+  position: relative;
+  left: 440px;
+}
+
+
+.project3 .container .face.face2 li{
+  position: relative;
+  left: -20px;
+}
+
+
+/* Work-Experience Section */
+
+main .project4{
+  height: 1150px;
+}
+
+.project4 .title h1{
+  font-size: 60px;
+  position: relative;
+  top: -80px;
+  
+}
+
+main .project4 .inner{
+  width: 500px;
+}
+
+main .project4 #Novantas{
+  position: relative;
+  left: 75px;
+  height: 157px;
+  margin-left: -20px;
+  top: -200px;
+
+}
+
+main .project4 img{
+  position: relative;
+  left: 5px;
+  top: 7px;
+  
+  height: 120px;
+  width: 120px;
+}
+main .project4 b{
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  left: -50px;
+  margin: 0px;
+}
+
+main .project4 #company{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  top: 9px;
+  left: -53px;
+}
+main .project4 #description{
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  position: relative;
+  left: 22px;
+  top: 6px;
+}
+
+
+
+main .project4 .right{
+  position: relative;
+  left: -195px;
+  top: 72px;
+}
+
+main .project4 .right-2{
+  position: relative;
+  left: -225px;
+  top: 65px;
+}
+
+
+main .project4 #Novantas{
+  border: 1px;
+  border-style: groove;
+  border-radius: 17px;
+  border-width: thick;
+}
+
+
+/* Resume section */
+
+main .resume{
+  height: 1200px;
+}
+main .resume .code{
+  left: -30px;
+}
+
+main .resume .console{
+  height: 700px;
+  border-bottom: 15px solid #ccc;
+  
+}
+
+main .resume .breaknow{
+  position: relative;
+}
+
+main .resume .breaknow::before{
+  content: '\a';
+  white-space: pre;
+}
+
+main .resume .breaknow{
+  position: relative;
+  left: 30px;
+}
+
+/* Last Section -> Let's get in touch */
+
+main .Contact-Me ol{
+  position: relative;
+  top: 50px;
+  left: -5px;
+}
+
+main .Contact-Me #footer_last{
+  position: relative;
+  left: 130px;
+  top: 130px;
+}
+
+
+main .articles__footer{
+  width: 900px;
+}
+
+main .Contact-Me #L-p{
+  position: relative;
+  left: 0px;
+}
+
+main .Contact-Me #Mail-p{
+  left: 12px;
+}
+
+}
